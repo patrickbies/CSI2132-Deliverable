@@ -365,7 +365,7 @@ int main() {
         }
     }
 
-    writeSQLFile("populate-tables.sql", employees, hotels, rooms, works_at);
+    writeSQLFile("../schema/populate-tables.sql", employees, hotels, rooms, works_at);
 
     return 0;
 }
