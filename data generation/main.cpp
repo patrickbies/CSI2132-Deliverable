@@ -293,7 +293,7 @@ int main() {
     set<string> usedSSN;
 
     for (int i = 0; i < chain_ids.size(); i++) {
-        uniform_int_distribution<int> hotelDist(ROOMS_PER, ADD_ROOMS + ROOMS_PER);
+        uniform_int_distribution<int> hotelDist(HOTELS_PER, ADD_HOTELS + HOTELS_PER);
         int numHotels = hotelDist(rng);
 
         for (int j = 0; j < numHotels; j++) {
