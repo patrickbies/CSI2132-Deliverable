@@ -29,8 +29,8 @@ app.get("/api/hotels", async (req, res) => {
       num_stars,
       email,
       (phone_num).country_code AS country_code,
-      (phone_num).area_code as area_code,
-      (phone_num).pnumber as pnumber
+      (phone_num).area_code AS area_code,
+      (phone_num).pnumber AS pnumber
     FROM Hotel;`);
 
     const hotels = rows.map((row) => ({
@@ -46,7 +46,7 @@ app.get("/api/hotels", async (req, res) => {
       num_rooms: row.num_rooms,
       num_stars: row.num_stars,
       email: row.email,
-      phone_num: row.phone_num
+      phone_num: row.country_code
         ? {
             country_code: row.country_code,
             area_code: row.area_code,
@@ -55,7 +55,7 @@ app.get("/api/hotels", async (req, res) => {
         : null,
     }));
 
-    res.json(rows);
+    res.json(hotels);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
