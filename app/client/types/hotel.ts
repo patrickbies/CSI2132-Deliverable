@@ -1,9 +1,7 @@
 export interface HotelType {
   address: {
-    street: {
-      street_num: number;
-      street_name: string;
-    };
+    street_num: number;
+    street_name: string;
     city: string;
     state: string;
     zip: string;
