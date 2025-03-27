@@ -1,3 +1,16 @@
+/*
+ * Generates random mock data for e-hotels database
+ * All SSNs generated are unique
+ * All hotel addresses are unique 
+ * 
+ * Generates 8 to 10 hotels per chain
+ * Generates 1 to 4 employees per hotel (exactly one manager)
+ * Generates 5 to 10 rooms per hotel
+ * 
+ * (Maybe will have to watch out for duplicate SSNs in the future)
+ * 
+ */
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -291,6 +304,7 @@ int main() {
     vector<WorksAt> works_at;
 
     set<string> usedSSN;
+    set<Address> hotel_address;
 
     for (int i = 0; i < chain_ids.size(); i++) {
         uniform_int_distribution<int> hotelDist(HOTELS_PER, ADD_HOTELS + HOTELS_PER);
@@ -298,8 +312,18 @@ int main() {
 
         for (int j = 0; j < numHotels; j++) {
             Hotel cur;
+            
+            // ensure address is unique for hotels;
+            while (true) {
+                Address ad = generateAddressStruct(rng);
 
-            cur.address = generateAddressStruct(rng);
+                if (hotel_address.count(ad) == 0) {
+                    cur.address = ad;
+                    hotel_address.insert(ad);
+                    break;
+                } 
+            }
+
             cur.chain_id = chain_ids[i];
             cur.email = chain_ids[i] + "-hotel" + to_string(j) + "@gmail.com";
             cur.phone_num = PhoneNumber({ "+1", "416", "1235555" });
