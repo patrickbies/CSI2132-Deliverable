@@ -8,16 +8,12 @@ DROP TYPE IF EXISTS
     address_type, street_type;
 
 -- helper types
-CREATE TYPE street_type AS (
-    street_num  	INT,
-    street_name 	VARCHAR(255)
-);
-
 CREATE TYPE address_type AS (
-    street 		street_type,
-    city   		VARCHAR(255),
-    state  		VARCHAR(50),
-    zip    		VARCHAR(20)
+    street_num  	INT,
+    street_name 	VARCHAR(255),
+    city   			VARCHAR(255),
+    state  			VARCHAR(50),
+    zip    			VARCHAR(20)
 );
 
 CREATE TYPE phone_number_type AS (

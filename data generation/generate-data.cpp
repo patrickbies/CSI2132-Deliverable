@@ -230,8 +230,8 @@ void writeSQLFile(const std::string& filename,
         else
             sqlFile << "'" << emp.full_name.middle << "', ";
         sqlFile << "'" << emp.full_name.last << "')::full_name_type,\n";
-        sqlFile << "  ROW(ROW(" << emp.address.street_num << ", '" << emp.address.street_name
-            << "')::street_type, '" << emp.address.city << "', '"
+        sqlFile << "  ROW(" << emp.address.street_num << ", '" << emp.address.street_name
+            << "', '" << emp.address.city << "', '"
             << emp.address.state << "', '" << emp.address.zip << "')::address_type,\n";
         sqlFile << "  ARRAY[";
         for (size_t i = 0; i < emp.roles.size(); i++) {
@@ -247,8 +247,8 @@ void writeSQLFile(const std::string& filename,
     sqlFile << "-- Populating Hotels\n";
     for (const auto& hotel : hotels) {
         sqlFile << "INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (\n";
-        sqlFile << "  ROW(ROW(" << hotel.address.street_num << ", '" << hotel.address.street_name
-            << "')::street_type, '" << hotel.address.city << "', '"
+        sqlFile << "  ROW(" << hotel.address.street_num << ", '" << hotel.address.street_name
+            << "', '" << hotel.address.city << "', '"
             << hotel.address.state << "', '" << hotel.address.zip << "')::address_type,\n";
         sqlFile << "  '" << hotel.chain_id << "',\n";
         sqlFile << "  '" << hotel.manager_SSN << "',\n";
@@ -265,8 +265,8 @@ void writeSQLFile(const std::string& filename,
     for (const auto& room : rooms) {
         sqlFile << "INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (\n";
         sqlFile << "  " << room.room_num << ",\n";
-        sqlFile << "  ROW(ROW(" << room.hotel_address.street_num << ", '" << room.hotel_address.street_name
-            << "')::street_type, '" << room.hotel_address.city << "', '"
+        sqlFile << "  ROW(" << room.hotel_address.street_num << ", '" << room.hotel_address.street_name
+            << "', '" << room.hotel_address.city << "', '"
             << room.hotel_address.state << "', '" << room.hotel_address.zip << "')::address_type,\n";
         sqlFile << "  " << room.price << ",\n";
         sqlFile << "  " << room.capacity << ",\n";
@@ -295,8 +295,8 @@ void writeSQLFile(const std::string& filename,
     for (const auto& work : works_at) {
         sqlFile << "INSERT INTO WorksAt (e_SSN, h_address) VALUES (\n";
         sqlFile << "  '" << work.e_SSN << "',\n";
-        sqlFile << "  ROW(ROW(" << work.h_address.street_num << ", '" << work.h_address.street_name
-            << "')::street_type, '" << work.h_address.city << "', '"
+        sqlFile << "  ROW(" << work.h_address.street_num << ", '" << work.h_address.street_name
+            << "', '" << work.h_address.city << "', '"
             << work.h_address.state << "', '" << work.h_address.zip << "')::address_type\n";
         sqlFile << ");\n\n";
     }

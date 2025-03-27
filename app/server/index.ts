@@ -1,10 +1,10 @@
-const express = require('express');
-const { Pool } = require('pg');
-const cors = require('cors');
+import express from 'express';
+import { Pool } from 'pg';
+import cors from 'cors';
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors({origin: 'http://localhost:5173'}));
 app.use(express.json());
 
 const pool = new Pool({
@@ -15,7 +15,6 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
-// Test API endpoint, fetching all hotels
 app.get('/api/hotels', async (req, res) => {
   try {
     const { rows } = await pool.query('SELECT * FROM Hotel;');
