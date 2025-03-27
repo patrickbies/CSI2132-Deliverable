@@ -30,12 +30,12 @@ const HotelList = () => {
     <div>
       <h2>Hotels</h2>
       <ul>
-        {hotels.map((hotel) => (
+        {hotels.map((hotel) => {console.log(hotel); return (
           <li key={JSON.stringify(hotel.address)}>
-            {hotel.address.street.street_num} {hotel.address.street.street_name}, 
+            {hotel.address.street_num} {hotel.address.street_name}, 
             {hotel.address.city}, {hotel.address.state}
           </li>
-        ))}
+        )})}
       </ul>
     </div>
   );

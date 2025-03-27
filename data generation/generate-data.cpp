@@ -397,7 +397,7 @@ int main() {
                 std::string priceStr = oss.str();
 
                 crom.amenities = generateAmmenities(rng);
-                crom.capacity = starDist(rng); // reuing because 1 to 5 is fine for capacity.
+                crom.capacity = starDist(rng); // reusing because 1 to 5 is fine for capacity.
                 crom.damages = generateDamages(rng);
                 crom.extendable = starDist(rng) % 2; // simply casting from 1 to 5 to bool, 3 / 5 % chance to be extendable
                 crom.hotel_address = cur.address;
