@@ -48,6 +48,18 @@ struct Address {
     string city;
     string state;
     string zip;
+
+    bool operator<(const Address &other) const {
+        if (street_num != other.street_num)
+            return street_num < other.street_num;
+        if (street_name != other.street_name)
+            return street_name < other.street_name;
+        if (city != other.city)
+            return city < other.city;
+        if (state != other.state)
+            return state < other.state;
+        return zip < other.zip;
+    }
 };
 
 struct PhoneNumber {
