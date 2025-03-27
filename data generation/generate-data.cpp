@@ -224,15 +224,21 @@ void writeSQLFile(const std::string& filename,
     for (const auto& emp : employees) {
         sqlFile << "INSERT INTO Employee (SSN, full_name, address, roles) VALUES (\n";
         sqlFile << "  '" << emp.SSN << "',\n";
+
+        // full name:
         sqlFile << "  ROW('" << emp.full_name.first << "', ";
         if (emp.full_name.middle.empty())
             sqlFile << "NULL, ";
         else
             sqlFile << "'" << emp.full_name.middle << "', ";
         sqlFile << "'" << emp.full_name.last << "')::full_name_type,\n";
+
+        // address
         sqlFile << "  ROW(" << emp.address.street_num << ", '" << emp.address.street_name
             << "', '" << emp.address.city << "', '"
             << emp.address.state << "', '" << emp.address.zip << "')::address_type,\n";
+
+        // roles:
         sqlFile << "  ARRAY[";
         for (size_t i = 0; i < emp.roles.size(); i++) {
             sqlFile << "'" << emp.roles[i] << "'";
@@ -247,6 +253,8 @@ void writeSQLFile(const std::string& filename,
     sqlFile << "-- Populating Hotels\n";
     for (const auto& hotel : hotels) {
         sqlFile << "INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (\n";
+
+        // address
         sqlFile << "  ROW(" << hotel.address.street_num << ", '" << hotel.address.street_name
             << "', '" << hotel.address.city << "', '"
             << hotel.address.state << "', '" << hotel.address.zip << "')::address_type,\n";
@@ -265,6 +273,8 @@ void writeSQLFile(const std::string& filename,
     for (const auto& room : rooms) {
         sqlFile << "INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (\n";
         sqlFile << "  " << room.room_num << ",\n";
+
+        // address
         sqlFile << "  ROW(" << room.hotel_address.street_num << ", '" << room.hotel_address.street_name
             << "', '" << room.hotel_address.city << "', '"
             << room.hotel_address.state << "', '" << room.hotel_address.zip << "')::address_type,\n";
