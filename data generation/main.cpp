@@ -214,7 +214,7 @@ void writeSQLFile(const std::string& filename,
             if (i < emp.roles.size() - 1)
                 sqlFile << ", ";
         }
-        sqlFile << "]\n";
+        sqlFile << "]::TEXT[]\n";
         sqlFile << ");\n\n";
     }
 
@@ -254,14 +254,14 @@ void writeSQLFile(const std::string& filename,
             if (i < room.amenities.size() - 1)
                 sqlFile << ", ";
         }
-        sqlFile << "],\n";
+        sqlFile << "]::TEXT[],\n";
         sqlFile << "  ARRAY[";
         for (size_t i = 0; i < room.damages.size(); i++) {
             sqlFile << "'" << room.damages[i] << "'";
             if (i < room.damages.size() - 1)
                 sqlFile << ", ";
         }
-        sqlFile << "]\n";
+        sqlFile << "]::TEXT[]\n";
         sqlFile << ");\n\n";
     }
 

@@ -1,1332 +1,1143 @@
 -- Populating Employees
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '914866278',
-  ROW('Paul', 'C.', 'Roberts')::full_name_type,
-  ROW(ROW(7812, 'Cedar Ln')::street_type, 'Hamilton', 'ON', '29560')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '813005711',
+  ROW('David', 'T.', 'Carter')::full_name_type,
+  ROW(ROW(4733, 'Main St')::street_type, 'Hamilton', 'AB', '44559')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '601752073',
-  ROW('Sarah', 'P.', 'Phillips')::full_name_type,
-  ROW(ROW(5579, 'Washington Ave')::street_type, 'Halifax', 'ON', '27297')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '367078506',
+  ROW('Edward', 'B.', 'Baker')::full_name_type,
+  ROW(ROW(6139, 'Main St')::street_type, 'Quebec City', 'NL', '40590')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '174965681',
-  ROW('Daniel', 'T.', 'Lopez')::full_name_type,
-  ROW(ROW(1852, 'Pine Rd')::street_type, 'Calgary', 'PE', '49005')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '886320633',
+  ROW('Margaret', 'D.', 'Sanchez')::full_name_type,
+  ROW(ROW(4776, 'Sunset Blvd')::street_type, 'Halifax', 'NL', '13830')::address_type,
+  ARRAY['Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '232409466',
-  ROW('Laura', 'S.', 'Williams')::full_name_type,
-  ROW(ROW(2417, 'Oak St')::street_type, 'Quebec City', 'ON', '84049')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '342585002',
+  ROW('Rebecca', 'G.', 'Jones')::full_name_type,
+  ROW(ROW(8890, 'Lakeview Dr')::street_type, 'Ottawa', 'SK', '34852')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '828037229',
-  ROW('George', 'Q.', 'Harris')::full_name_type,
-  ROW(ROW(7957, 'Elm St')::street_type, 'Calgary', 'ON', '95975')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '046535605',
+  ROW('Sharon', 'A.', 'Hernandez')::full_name_type,
+  ROW(ROW(9402, 'Elm St')::street_type, 'Vancouver', 'NS', '88056')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '702719651',
-  ROW('Alex', 'N.', 'Anderson')::full_name_type,
-  ROW(ROW(5539, 'Washington Ave')::street_type, 'Toronto', 'BC', '30538')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '174417189',
+  ROW('David', 'N.', 'Jones')::full_name_type,
+  ROW(ROW(9254, 'Elm St')::street_type, 'Vancouver', 'ON', '16360')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '748191030',
-  ROW('Anthony', 'J.', 'Davis')::full_name_type,
-  ROW(ROW(9693, 'Lakeview Dr')::street_type, 'Quebec City', 'PE', '59156')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Front Desk']
+  '359242468',
+  ROW('Anthony', 'A.', 'Taylor')::full_name_type,
+  ROW(ROW(8018, 'Lakeview Dr')::street_type, 'Halifax', 'NS', '86100')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '333988255',
-  ROW('Timothy', 'J.', 'Adams')::full_name_type,
-  ROW(ROW(201, 'Main St')::street_type, 'Vancouver', 'SK', '40118')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '303024223',
+  ROW('Kenneth', 'A.', 'Jones')::full_name_type,
+  ROW(ROW(5297, 'Hillcrest Rd')::street_type, 'Ottawa', 'ON', '56402')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '036141556',
-  ROW('Sarah', 'S.', 'Smith')::full_name_type,
-  ROW(ROW(9239, 'Washington Ave')::street_type, 'Quebec City', 'PE', '51089')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '618458890',
+  ROW('Daniel', 'L.', 'Garcia')::full_name_type,
+  ROW(ROW(681, 'Oak St')::street_type, 'Calgary', 'NL', '18839')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '236310037',
-  ROW('Steven', 'C.', 'Hall')::full_name_type,
-  ROW(ROW(4844, 'Cedar Ln')::street_type, 'Hamilton', 'AB', '53429')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '755925993',
+  ROW('Laura', 'C.', 'Hall')::full_name_type,
+  ROW(ROW(5230, 'Washington Ave')::street_type, 'Quebec City', 'AB', '80490')::address_type,
+  ARRAY['Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '474720539',
-  ROW('Laura', 'C.', 'Nelson')::full_name_type,
-  ROW(ROW(1615, 'Sunset Blvd')::street_type, 'Quebec City', 'SK', '98541')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Front Desk']
+  '025508499',
+  ROW('Jessica', 'K.', 'Roberts')::full_name_type,
+  ROW(ROW(4522, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '12155')::address_type,
+  ARRAY['Housekeeping', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '263644252',
-  ROW('Paul', 'E.', 'Clark')::full_name_type,
-  ROW(ROW(3245, 'Pine Rd')::street_type, 'Ottawa', 'AB', '39186')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '162436337',
+  ROW('Karen', 'S.', 'Lewis')::full_name_type,
+  ROW(ROW(1776, 'Main St')::street_type, 'Halifax', 'MB', '13766')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '656748374',
-  ROW('Ronald', 'A.', 'Roberts')::full_name_type,
-  ROW(ROW(1677, 'Hillcrest Rd')::street_type, 'Ottawa', 'PE', '78446')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '436709402',
+  ROW('Margaret', 'Q.', 'Phillips')::full_name_type,
+  ROW(ROW(3124, 'Sunset Blvd')::street_type, 'Hamilton', 'AB', '13055')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '685497503',
-  ROW('Emily', 'D.', 'Wright')::full_name_type,
-  ROW(ROW(3203, 'Cedar Ln')::street_type, 'Hamilton', 'PE', '40774')::address_type,
-  ARRAY['Housekeeping', 'Security', 'Front Desk']
+  '541652304',
+  ROW('Deborah', 'D.', 'Johnson')::full_name_type,
+  ROW(ROW(1220, 'Main St')::street_type, 'Calgary', 'QC', '42052')::address_type,
+  ARRAY['Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '625787228',
-  ROW('Laura', 'P.', 'Rivera')::full_name_type,
-  ROW(ROW(2807, 'Hillcrest Rd')::street_type, 'Ottawa', 'PE', '19884')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Front Desk']
+  '467206954',
+  ROW('Kenneth', 'C.', 'White')::full_name_type,
+  ROW(ROW(2927, 'Maple Ave')::street_type, 'Ottawa', 'ON', '54942')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '001329791',
-  ROW('Nancy', 'L.', 'Brown')::full_name_type,
-  ROW(ROW(2297, 'Main St')::street_type, 'Calgary', 'PE', '94501')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '096934380',
+  ROW('Cynthia', 'T.', 'Phillips')::full_name_type,
+  ROW(ROW(48, 'Maple Ave')::street_type, 'Hamilton', 'NS', '23775')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '969586120',
-  ROW('Mark', 'L.', 'Jones')::full_name_type,
-  ROW(ROW(1242, 'Pine Rd')::street_type, 'Montreal', 'ON', '56520')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']
+  '457293025',
+  ROW('James', 'T.', 'Rodriguez')::full_name_type,
+  ROW(ROW(1043, 'Cedar Ln')::street_type, 'Toronto', 'NL', '82236')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '647963300',
-  ROW('Cynthia', 'D.', 'Ramirez')::full_name_type,
-  ROW(ROW(4678, 'Hillcrest Rd')::street_type, 'Halifax', 'ON', '21388')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '640382924',
+  ROW('James', 'S.', 'Lee')::full_name_type,
+  ROW(ROW(1388, 'Lakeview Dr')::street_type, 'Montreal', 'AB', '64223')::address_type,
+  ARRAY['Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '541749497',
-  ROW('Michael', 'J.', 'White')::full_name_type,
-  ROW(ROW(3056, 'Lakeview Dr')::street_type, 'Winnipeg', 'NB', '29613')::address_type,
-  ARRAY['Chef', 'Security', 'Front Desk']
+  '542768534',
+  ROW('William', 'M.', 'Ramirez')::full_name_type,
+  ROW(ROW(3898, 'Oak St')::street_type, 'Vancouver', 'PE', '45018')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '088586446',
-  ROW('Rebecca', 'K.', 'Jones')::full_name_type,
-  ROW(ROW(9794, 'Pine Rd')::street_type, 'Edmonton', 'MB', '99172')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '595681702',
+  ROW('Margaret', 'Q.', 'Wilson')::full_name_type,
+  ROW(ROW(4414, 'Lakeview Dr')::street_type, 'Quebec City', 'PE', '66013')::address_type,
+  ARRAY['Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '077862089',
-  ROW('Joshua', 'N.', 'Mitchell')::full_name_type,
-  ROW(ROW(8389, 'Sunset Blvd')::street_type, 'Quebec City', 'NS', '93501')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Front Desk']
+  '784056379',
+  ROW('Andrew', 'A.', 'Hill')::full_name_type,
+  ROW(ROW(6131, 'Elm St')::street_type, 'Edmonton', 'QC', '56163')::address_type,
+  ARRAY['Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '549918155',
-  ROW('Robert', 'N.', 'Gonzalez')::full_name_type,
-  ROW(ROW(861, 'Oak St')::street_type, 'Halifax', 'ON', '94505')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']
+  '002675102',
+  ROW('Michael', 'P.', 'Nguyen')::full_name_type,
+  ROW(ROW(2022, 'Hillcrest Rd')::street_type, 'Quebec City', 'NS', '88156')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '625613270',
-  ROW('James', 'E.', 'Smith')::full_name_type,
-  ROW(ROW(8866, 'Washington Ave')::street_type, 'Hamilton', 'BC', '24142')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '660819910',
+  ROW('Steven', 'I.', 'Campbell')::full_name_type,
+  ROW(ROW(2235, 'Maple Ave')::street_type, 'Montreal', 'BC', '83598')::address_type,
+  ARRAY['Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '996352733',
-  ROW('Stephanie', 'O.', 'Baker')::full_name_type,
-  ROW(ROW(9025, 'Oak St')::street_type, 'Calgary', 'PE', '35742')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '000387566',
+  ROW('Joshua', 'C.', 'Green')::full_name_type,
+  ROW(ROW(7383, 'Washington Ave')::street_type, 'Toronto', 'MB', '45965')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '919439898',
-  ROW('Michael', 'S.', 'Green')::full_name_type,
-  ROW(ROW(3168, 'Cedar Ln')::street_type, 'Toronto', 'NL', '34805')::address_type,
-  ARRAY['Maintenance', 'Security', 'Front Desk']
+  '208521376',
+  ROW('Mark', 'P.', 'Johnson')::full_name_type,
+  ROW(ROW(4946, 'Pine Rd')::street_type, 'Edmonton', 'NS', '63114')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '258445530',
-  ROW('George', 'F.', 'Campbell')::full_name_type,
-  ROW(ROW(7627, 'Main St')::street_type, 'Toronto', 'BC', '34672')::address_type,
-  ARRAY['Security', 'Front Desk']
+  '482420509',
+  ROW('David', 'C.', 'Nguyen')::full_name_type,
+  ROW(ROW(6691, 'Pine Rd')::street_type, 'Edmonton', 'MB', '23709')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '907080852',
-  ROW('Karen', 'H.', 'Nguyen')::full_name_type,
-  ROW(ROW(3450, 'Pine Rd')::street_type, 'Edmonton', 'NS', '91281')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '785515133',
+  ROW('Karen', 'S.', 'White')::full_name_type,
+  ROW(ROW(7494, 'Elm St')::street_type, 'Halifax', 'NS', '38311')::address_type,
+  ARRAY['Housekeeping', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '712858168',
-  ROW('Kenneth', 'O.', 'Jackson')::full_name_type,
-  ROW(ROW(2757, 'Main St')::street_type, 'Hamilton', 'NL', '17758')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '787429085',
+  ROW('Edward', 'L.', 'Martinez')::full_name_type,
+  ROW(ROW(2419, 'Cedar Ln')::street_type, 'Montreal', 'NS', '91471')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '411911154',
-  ROW('Linda', 'S.', 'Torres')::full_name_type,
-  ROW(ROW(2108, 'Elm St')::street_type, 'Calgary', 'AB', '81122')::address_type,
-  ARRAY['Chef', 'Front Desk']
+  '815684930',
+  ROW('Sandra', 'L.', 'Green')::full_name_type,
+  ROW(ROW(9704, 'Pine Rd')::street_type, 'Vancouver', 'QC', '65587')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '015935291',
-  ROW('Andrew', 'P.', 'Hill')::full_name_type,
-  ROW(ROW(5407, 'Lakeview Dr')::street_type, 'Quebec City', 'NB', '62620')::address_type,
-  ARRAY['Chef', 'Front Desk']
+  '945905397',
+  ROW('George', 'N.', 'Campbell')::full_name_type,
+  ROW(ROW(5816, 'Maple Ave')::street_type, 'Calgary', 'NL', '88269')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '146118867',
-  ROW('Donna', 'Q.', 'Lewis')::full_name_type,
-  ROW(ROW(241, 'Hillcrest Rd')::street_type, 'Toronto', 'BC', '52269')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '454410146',
+  ROW('Donna', 'L.', 'Anderson')::full_name_type,
+  ROW(ROW(2090, 'Pine Rd')::street_type, 'Winnipeg', 'NB', '95539')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '747646806',
-  ROW('Pamela', 'L.', 'Thompson')::full_name_type,
-  ROW(ROW(1723, 'Maple Ave')::street_type, 'Winnipeg', 'NS', '69302')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '130494272',
+  ROW('Anthony', 'O.', 'Johnson')::full_name_type,
+  ROW(ROW(667, 'Main St')::street_type, 'Winnipeg', 'NL', '82252')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '996310569',
-  ROW('Deborah', 'G.', 'Sanchez')::full_name_type,
-  ROW(ROW(7752, 'Main St')::street_type, 'Vancouver', 'MB', '79087')::address_type,
-  ARRAY['Chef', 'Front Desk']
+  '268338028',
+  ROW('James', 'E.', 'Perez')::full_name_type,
+  ROW(ROW(7652, 'Maple Ave')::street_type, 'Hamilton', 'NS', '54517')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '810675408',
-  ROW('Linda', 'T.', 'Davis')::full_name_type,
-  ROW(ROW(5293, 'Sunset Blvd')::street_type, 'Hamilton', 'ON', '71461')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Front Desk']
+  '538618944',
+  ROW('Deborah', 'I.', 'Thompson')::full_name_type,
+  ROW(ROW(4021, 'Hillcrest Rd')::street_type, 'Winnipeg', 'PE', '81302')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '932734965',
-  ROW('Joshua', 'G.', 'Clark')::full_name_type,
-  ROW(ROW(4563, 'Washington Ave')::street_type, 'Vancouver', 'QC', '33234')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '902288877',
+  ROW('Ashley', 'G.', 'Perez')::full_name_type,
+  ROW(ROW(7329, 'Lakeview Dr')::street_type, 'Ottawa', 'NB', '99283')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '227849706',
-  ROW('Deborah', 'O.', 'Young')::full_name_type,
-  ROW(ROW(4353, 'Pine Rd')::street_type, 'Toronto', 'NS', '32440')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '132794318',
+  ROW('Pamela', 'O.', 'Gonzalez')::full_name_type,
+  ROW(ROW(6903, 'Hillcrest Rd')::street_type, 'Halifax', 'BC', '74207')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '263980558',
-  ROW('Matthew', 'C.', 'Carter')::full_name_type,
-  ROW(ROW(5960, 'Cedar Ln')::street_type, 'Edmonton', 'PE', '92479')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '954606568',
+  ROW('Timothy', 'B.', 'Thomas')::full_name_type,
+  ROW(ROW(9056, 'Pine Rd')::street_type, 'Hamilton', 'MB', '47245')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '797287331',
-  ROW('George', 'D.', 'White')::full_name_type,
-  ROW(ROW(9092, 'Pine Rd')::street_type, 'Ottawa', 'QC', '81003')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '677483255',
+  ROW('Paul', 'N.', 'Walker')::full_name_type,
+  ROW(ROW(3920, 'Lakeview Dr')::street_type, 'Montreal', 'MB', '75012')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '473207864',
-  ROW('William', 'F.', 'Johnson')::full_name_type,
-  ROW(ROW(9178, 'Washington Ave')::street_type, 'Quebec City', 'PE', '64944')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '504858816',
+  ROW('Jessica', 'R.', 'Lee')::full_name_type,
+  ROW(ROW(3160, 'Elm St')::street_type, 'Ottawa', 'QC', '92025')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '348910099',
-  ROW('George', 'R.', 'Walker')::full_name_type,
-  ROW(ROW(8405, 'Sunset Blvd')::street_type, 'Montreal', 'AB', '49807')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '138655986',
+  ROW('Jessica', 'R.', 'Hill')::full_name_type,
+  ROW(ROW(4869, 'Lakeview Dr')::street_type, 'Halifax', 'NB', '65024')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '707665652',
-  ROW('Joshua', 'D.', 'Torres')::full_name_type,
-  ROW(ROW(5264, 'Pine Rd')::street_type, 'Calgary', 'AB', '62566')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '774083106',
+  ROW('Steven', 'N.', 'Jones')::full_name_type,
+  ROW(ROW(3653, 'Hillcrest Rd')::street_type, 'Calgary', 'NS', '82148')::address_type,
+  ARRAY['Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '409192695',
-  ROW('Christopher', 'C.', 'Johnson')::full_name_type,
-  ROW(ROW(7253, 'Maple Ave')::street_type, 'Calgary', 'AB', '88597')::address_type,
-  ARRAY['Chef', 'Front Desk']
+  '818679417',
+  ROW('Stephanie', 'B.', 'Johnson')::full_name_type,
+  ROW(ROW(6702, 'Maple Ave')::street_type, 'Edmonton', 'SK', '17199')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '470416508',
-  ROW('Pamela', 'N.', 'Young')::full_name_type,
-  ROW(ROW(4490, 'Maple Ave')::street_type, 'Ottawa', 'NB', '78419')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '552928401',
+  ROW('David', 'E.', 'Smith')::full_name_type,
+  ROW(ROW(627, 'Maple Ave')::street_type, 'Quebec City', 'QC', '25496')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '744556144',
-  ROW('Michelle', 'R.', 'Hernandez')::full_name_type,
-  ROW(ROW(764, 'Cedar Ln')::street_type, 'Winnipeg', 'BC', '21402')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '993561705',
+  ROW('Christopher', 'M.', 'Moore')::full_name_type,
+  ROW(ROW(6028, 'Oak St')::street_type, 'Toronto', 'AB', '63411')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '008476767',
-  ROW('Anthony', 'P.', 'Baker')::full_name_type,
-  ROW(ROW(3616, 'Lakeview Dr')::street_type, 'Hamilton', 'NS', '47622')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']
+  '683245390',
+  ROW('Laura', 'M.', 'Harris')::full_name_type,
+  ROW(ROW(181, 'Hillcrest Rd')::street_type, 'Hamilton', 'MB', '20935')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '150544264',
-  ROW('Donna', 'K.', 'Jackson')::full_name_type,
-  ROW(ROW(3288, 'Washington Ave')::street_type, 'Halifax', 'PE', '96963')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '569589943',
+  ROW('Stephanie', 'L.', 'Scott')::full_name_type,
+  ROW(ROW(4807, 'Hillcrest Rd')::street_type, 'Calgary', 'NL', '30282')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '185805386',
-  ROW('Timothy', 'H.', 'Adams')::full_name_type,
-  ROW(ROW(4277, 'Oak St')::street_type, 'Vancouver', 'QC', '80296')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '006081834',
+  ROW('Jane', 'S.', 'Johnson')::full_name_type,
+  ROW(ROW(7602, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '87086')::address_type,
+  ARRAY['Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '607342241',
-  ROW('Sarah', 'B.', 'Wright')::full_name_type,
-  ROW(ROW(7372, 'Oak St')::street_type, 'Quebec City', 'NL', '79576')::address_type,
-  ARRAY['Housekeeping', 'Front Desk']
+  '217261301',
+  ROW('Steven', 'N.', 'Nguyen')::full_name_type,
+  ROW(ROW(5747, 'Oak St')::street_type, 'Calgary', 'NB', '28186')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '970015010',
-  ROW('Pamela', 'G.', 'Nelson')::full_name_type,
-  ROW(ROW(9988, 'Main St')::street_type, 'Ottawa', 'NB', '72690')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '765581310',
+  ROW('Joshua', 'I.', 'King')::full_name_type,
+  ROW(ROW(4380, 'Elm St')::street_type, 'Halifax', 'QC', '67825')::address_type,
+  ARRAY['Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '373531398',
-  ROW('Sharon', 'J.', 'Brown')::full_name_type,
-  ROW(ROW(2065, 'Washington Ave')::street_type, 'Toronto', 'NS', '50817')::address_type,
-  ARRAY['Housekeeping', 'Front Desk']
+  '362768625',
+  ROW('Robert', 'H.', 'Sanchez')::full_name_type,
+  ROW(ROW(8098, 'Hillcrest Rd')::street_type, 'Edmonton', 'MB', '43611')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '207870652',
-  ROW('Laura', 'G.', 'Clark')::full_name_type,
-  ROW(ROW(5724, 'Oak St')::street_type, 'Montreal', 'ON', '69674')::address_type,
-  ARRAY['Security', 'Front Desk']
+  '259944294',
+  ROW('Christopher', 'P.', 'Garcia')::full_name_type,
+  ROW(ROW(4367, 'Washington Ave')::street_type, 'Calgary', 'ON', '77382')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '531194044',
-  ROW('Laura', 'C.', 'Anderson')::full_name_type,
-  ROW(ROW(5588, 'Cedar Ln')::street_type, 'Toronto', 'NB', '18138')::address_type,
-  ARRAY['Housekeeping', 'Front Desk']
+  '150812853',
+  ROW('Margaret', 'B.', 'Taylor')::full_name_type,
+  ROW(ROW(7553, 'Sunset Blvd')::street_type, 'Hamilton', 'NL', '49546')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '587539349',
-  ROW('Nancy', 'E.', 'Nelson')::full_name_type,
-  ROW(ROW(612, 'Maple Ave')::street_type, 'Winnipeg', 'QC', '30041')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '014477878',
+  ROW('Thomas', 'F.', 'Sanchez')::full_name_type,
+  ROW(ROW(7478, 'Oak St')::street_type, 'Ottawa', 'NS', '21857')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '314166222',
-  ROW('Pamela', 'I.', 'Gonzalez')::full_name_type,
-  ROW(ROW(3774, 'Maple Ave')::street_type, 'Ottawa', 'QC', '46695')::address_type,
-  ARRAY['Security', 'Front Desk']
+  '931865636',
+  ROW('Lisa', 'K.', 'Johnson')::full_name_type,
+  ROW(ROW(6243, 'Sunset Blvd')::street_type, 'Toronto', 'PE', '18441')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '040898753',
-  ROW('Steven', 'J.', 'Anderson')::full_name_type,
-  ROW(ROW(7633, 'Maple Ave')::street_type, 'Ottawa', 'QC', '64859')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '015852819',
+  ROW('Mark', 'B.', 'Campbell')::full_name_type,
+  ROW(ROW(3366, 'Lakeview Dr')::street_type, 'Montreal', 'NB', '24269')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '121932959',
-  ROW('Karen', 'N.', 'Lee')::full_name_type,
-  ROW(ROW(1235, 'Oak St')::street_type, 'Calgary', 'AB', '96783')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '324444785',
+  ROW('Anthony', 'A.', 'Robinson')::full_name_type,
+  ROW(ROW(7570, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '20410')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '701866086',
-  ROW('Anthony', 'N.', 'Martinez')::full_name_type,
-  ROW(ROW(7873, 'Pine Rd')::street_type, 'Edmonton', 'SK', '71539')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '255249963',
+  ROW('Ronald', 'E.', 'Rodriguez')::full_name_type,
+  ROW(ROW(1497, 'Lakeview Dr')::street_type, 'Vancouver', 'ON', '26725')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '646022805',
-  ROW('Ronald', 'R.', 'Allen')::full_name_type,
-  ROW(ROW(6668, 'Main St')::street_type, 'Montreal', 'NL', '65342')::address_type,
-  ARRAY['Housekeeping', 'Front Desk']
+  '634520308',
+  ROW('Jane', 'S.', 'Young')::full_name_type,
+  ROW(ROW(9492, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '28413')::address_type,
+  ARRAY['Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '111520408',
-  ROW('Kenneth', 'R.', 'Nelson')::full_name_type,
-  ROW(ROW(3795, 'Pine Rd')::street_type, 'Quebec City', 'NL', '20931')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '313652237',
+  ROW('William', 'K.', 'Flores')::full_name_type,
+  ROW(ROW(1491, 'Washington Ave')::street_type, 'Toronto', 'ON', '22157')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '474171808',
-  ROW('Kenneth', 'E.', 'Moore')::full_name_type,
-  ROW(ROW(4176, 'Oak St')::street_type, 'Toronto', 'NS', '32415')::address_type,
-  ARRAY['Chef', 'Front Desk']
+  '219425387',
+  ROW('Ashley', 'L.', 'Rodriguez')::full_name_type,
+  ROW(ROW(4109, 'Hillcrest Rd')::street_type, 'Ottawa', 'AB', '65203')::address_type,
+  ARRAY['Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '328007152',
-  ROW('William', 'L.', 'Thomas')::full_name_type,
-  ROW(ROW(447, 'Sunset Blvd')::street_type, 'Winnipeg', 'PE', '35225')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']
+  '697863028',
+  ROW('Ronald', 'H.', 'Johnson')::full_name_type,
+  ROW(ROW(1978, 'Pine Rd')::street_type, 'Montreal', 'SK', '92537')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '780981539',
-  ROW('Anthony', 'I.', 'Moore')::full_name_type,
-  ROW(ROW(3674, 'Hillcrest Rd')::street_type, 'Edmonton', 'SK', '76821')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '145671355',
+  ROW('Michelle', 'I.', 'Hall')::full_name_type,
+  ROW(ROW(2725, 'Pine Rd')::street_type, 'Toronto', 'SK', '13010')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '544961330',
-  ROW('David', 'A.', 'Rodriguez')::full_name_type,
-  ROW(ROW(1611, 'Cedar Ln')::street_type, 'Winnipeg', 'QC', '72062')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Front Desk']
+  '844019880',
+  ROW('Michael', 'A.', 'Nelson')::full_name_type,
+  ROW(ROW(8857, 'Elm St')::street_type, 'Edmonton', 'MB', '20486')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '484519913',
-  ROW('David', 'E.', 'Nelson')::full_name_type,
-  ROW(ROW(9654, 'Elm St')::street_type, 'Halifax', 'AB', '83684')::address_type,
-  ARRAY['Maintenance', 'Security', 'Front Desk']
+  '278392644',
+  ROW('Stephanie', 'S.', 'Thompson')::full_name_type,
+  ROW(ROW(7992, 'Maple Ave')::street_type, 'Quebec City', 'QC', '58468')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '926786733',
-  ROW('Laura', 'E.', 'Allen')::full_name_type,
-  ROW(ROW(5022, 'Maple Ave')::street_type, 'Vancouver', 'NS', '74494')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '602054156',
+  ROW('Alex', 'E.', 'Mitchell')::full_name_type,
+  ROW(ROW(6436, 'Sunset Blvd')::street_type, 'Calgary', 'PE', '52818')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '864166166',
-  ROW('Mark', 'B.', 'Rodriguez')::full_name_type,
-  ROW(ROW(3566, 'Washington Ave')::street_type, 'Halifax', 'SK', '54279')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '252275367',
+  ROW('Timothy', 'Q.', 'Hall')::full_name_type,
+  ROW(ROW(4620, 'Lakeview Dr')::street_type, 'Montreal', 'NB', '39905')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '235536321',
-  ROW('Sarah', 'E.', 'Phillips')::full_name_type,
-  ROW(ROW(7767, 'Hillcrest Rd')::street_type, 'Ottawa', 'NL', '36602')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '201704129',
+  ROW('Donna', 'F.', 'Gonzalez')::full_name_type,
+  ROW(ROW(9024, 'Cedar Ln')::street_type, 'Halifax', 'PE', '44822')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '182744308',
-  ROW('Joseph', 'H.', 'Nguyen')::full_name_type,
-  ROW(ROW(1394, 'Sunset Blvd')::street_type, 'Halifax', 'PE', '37152')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Front Desk']
+  '881315020',
+  ROW('Robert', 'R.', 'Garcia')::full_name_type,
+  ROW(ROW(3800, 'Sunset Blvd')::street_type, 'Ottawa', 'QC', '39204')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '314725841',
-  ROW('David', 'G.', 'Jackson')::full_name_type,
-  ROW(ROW(4840, 'Elm St')::street_type, 'Edmonton', 'NS', '72801')::address_type,
-  ARRAY['Maintenance', 'Security', 'Front Desk']
+  '363928388',
+  ROW('Jessica', 'G.', 'Martin')::full_name_type,
+  ROW(ROW(6373, 'Cedar Ln')::street_type, 'Halifax', 'MB', '52578')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '604969049',
-  ROW('John', 'L.', 'Thompson')::full_name_type,
-  ROW(ROW(2937, 'Sunset Blvd')::street_type, 'Edmonton', 'SK', '43442')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '398497398',
+  ROW('Thomas', 'C.', 'Robinson')::full_name_type,
+  ROW(ROW(3401, 'Pine Rd')::street_type, 'Hamilton', 'SK', '24731')::address_type,
+  ARRAY['Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '679193032',
-  ROW('Thomas', 'G.', 'Gonzalez')::full_name_type,
-  ROW(ROW(6348, 'Maple Ave')::street_type, 'Vancouver', 'NS', '43151')::address_type,
-  ARRAY['Chef', 'Security', 'Front Desk']
+  '152132949',
+  ROW('Edward', 'L.', 'Walker')::full_name_type,
+  ROW(ROW(5395, 'Main St')::street_type, 'Quebec City', 'PE', '82657')::address_type,
+  ARRAY['Housekeeping', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '683966266',
-  ROW('Ronald', 'R.', 'Flores')::full_name_type,
-  ROW(ROW(5742, 'Lakeview Dr')::street_type, 'Toronto', 'NS', '89417')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']
+  '721101643',
+  ROW('Andrew', 'J.', 'Moore')::full_name_type,
+  ROW(ROW(2202, 'Lakeview Dr')::street_type, 'Edmonton', 'QC', '91328')::address_type,
+  ARRAY['Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '224730780',
-  ROW('John', 'M.', 'Anderson')::full_name_type,
-  ROW(ROW(8690, 'Pine Rd')::street_type, 'Montreal', 'MB', '31918')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '172803588',
+  ROW('Anthony', 'I.', 'Lopez')::full_name_type,
+  ROW(ROW(3485, 'Main St')::street_type, 'Halifax', 'MB', '41334')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '340528130',
-  ROW('Donna', 'B.', 'Lewis')::full_name_type,
-  ROW(ROW(3480, 'Maple Ave')::street_type, 'Winnipeg', 'BC', '39761')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']
+  '525690198',
+  ROW('Karen', 'O.', 'Nelson')::full_name_type,
+  ROW(ROW(8462, 'Lakeview Dr')::street_type, 'Ottawa', 'AB', '36407')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '993897675',
-  ROW('Nancy', 'N.', 'Torres')::full_name_type,
-  ROW(ROW(7875, 'Washington Ave')::street_type, 'Halifax', 'QC', '56874')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '394166951',
+  ROW('Jane', 'J.', 'Young')::full_name_type,
+  ROW(ROW(9371, 'Lakeview Dr')::street_type, 'Ottawa', 'SK', '78916')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '376362554',
-  ROW('John', 'Q.', 'Walker')::full_name_type,
-  ROW(ROW(3772, 'Maple Ave')::street_type, 'Hamilton', 'SK', '26412')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '701258881',
+  ROW('Kimberly', 'N.', 'Smith')::full_name_type,
+  ROW(ROW(5561, 'Pine Rd')::street_type, 'Montreal', 'NB', '48122')::address_type,
+  ARRAY['Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '753317622',
-  ROW('Edward', 'E.', 'Davis')::full_name_type,
-  ROW(ROW(3756, 'Elm St')::street_type, 'Winnipeg', 'NL', '47411')::address_type,
-  ARRAY['Security', 'Front Desk']
+  '920804917',
+  ROW('Linda', 'M.', 'Mitchell')::full_name_type,
+  ROW(ROW(1751, 'Cedar Ln')::street_type, 'Toronto', 'SK', '18675')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '826025653',
-  ROW('Karen', 'G.', 'Adams')::full_name_type,
-  ROW(ROW(7705, 'Elm St')::street_type, 'Vancouver', 'NB', '38647')::address_type,
-  ARRAY['Security', 'Front Desk']
+  '226359631',
+  ROW('Joshua', 'F.', 'Robinson')::full_name_type,
+  ROW(ROW(8554, 'Main St')::street_type, 'Quebec City', 'PE', '21814')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '011334545',
-  ROW('Paul', 'F.', 'Thomas')::full_name_type,
-  ROW(ROW(4097, 'Hillcrest Rd')::street_type, 'Toronto', 'QC', '24933')::address_type,
-  ARRAY['Security', 'Front Desk']
+  '552264869',
+  ROW('George', 'B.', 'Hernandez')::full_name_type,
+  ROW(ROW(5233, 'Cedar Ln')::street_type, 'Edmonton', 'ON', '14518')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '373829322',
-  ROW('Thomas', 'H.', 'Adams')::full_name_type,
-  ROW(ROW(6453, 'Oak St')::street_type, 'Winnipeg', 'PE', '91397')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '547403774',
+  ROW('Sandra', 'A.', 'Taylor')::full_name_type,
+  ROW(ROW(3887, 'Washington Ave')::street_type, 'Toronto', 'NB', '38060')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '417648552',
-  ROW('Michelle', 'A.', 'Nguyen')::full_name_type,
-  ROW(ROW(417, 'Lakeview Dr')::street_type, 'Toronto', 'ON', '13971')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']
+  '499725212',
+  ROW('Sharon', 'B.', 'Thomas')::full_name_type,
+  ROW(ROW(4669, 'Washington Ave')::street_type, 'Winnipeg', 'NL', '89467')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '589699846',
-  ROW('Sharon', 'G.', 'Lewis')::full_name_type,
-  ROW(ROW(1857, 'Main St')::street_type, 'Toronto', 'AB', '74397')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '595100535',
+  ROW('Carol', 'J.', 'Anderson')::full_name_type,
+  ROW(ROW(6023, 'Elm St')::street_type, 'Montreal', 'NB', '82440')::address_type,
+  ARRAY['Housekeeping', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '859376265',
-  ROW('Lisa', 'I.', 'Lopez')::full_name_type,
-  ROW(ROW(1179, 'Maple Ave')::street_type, 'Hamilton', 'SK', '91813')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']
+  '519023460',
+  ROW('Emily', 'M.', 'Walker')::full_name_type,
+  ROW(ROW(3811, 'Lakeview Dr')::street_type, 'Toronto', 'MB', '83955')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '275113226',
-  ROW('George', 'E.', 'Walker')::full_name_type,
-  ROW(ROW(25, 'Elm St')::street_type, 'Winnipeg', 'NB', '30143')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '065346279',
+  ROW('Betty', 'I.', 'Nelson')::full_name_type,
+  ROW(ROW(7849, 'Cedar Ln')::street_type, 'Calgary', 'NB', '35580')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '481997172',
-  ROW('Steven', 'M.', 'Johnson')::full_name_type,
-  ROW(ROW(7099, 'Lakeview Dr')::street_type, 'Toronto', 'NS', '75145')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Front Desk']
+  '951465929',
+  ROW('Ashley', 'H.', 'Smith')::full_name_type,
+  ROW(ROW(5805, 'Pine Rd')::street_type, 'Hamilton', 'BC', '42067')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '272435823',
-  ROW('Alex', 'O.', 'Gonzalez')::full_name_type,
-  ROW(ROW(9878, 'Pine Rd')::street_type, 'Winnipeg', 'AB', '61454')::address_type,
-  ARRAY['Housekeeping', 'Front Desk']
+  '862444404',
+  ROW('David', 'A.', 'Taylor')::full_name_type,
+  ROW(ROW(535, 'Lakeview Dr')::street_type, 'Calgary', 'QC', '69249')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '975207162',
-  ROW('Alex', 'B.', 'Wilson')::full_name_type,
-  ROW(ROW(8942, 'Lakeview Dr')::street_type, 'Edmonton', 'NB', '19825')::address_type,
-  ARRAY['Chef', 'Security', 'Front Desk']
+  '887498813',
+  ROW('Timothy', 'D.', 'Thomas')::full_name_type,
+  ROW(ROW(5029, 'Cedar Ln')::street_type, 'Quebec City', 'ON', '86338')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '558597981',
-  ROW('Steven', 'S.', 'Allen')::full_name_type,
-  ROW(ROW(8865, 'Washington Ave')::street_type, 'Calgary', 'AB', '37608')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '774707282',
+  ROW('Sharon', 'Q.', 'Roberts')::full_name_type,
+  ROW(ROW(8471, 'Oak St')::street_type, 'Ottawa', 'PE', '75761')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '972204476',
-  ROW('Joseph', 'E.', 'Lopez')::full_name_type,
-  ROW(ROW(8840, 'Oak St')::street_type, 'Toronto', 'NS', '65727')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Security', 'Front Desk']
+  '557897082',
+  ROW('Robert', 'D.', 'Robinson')::full_name_type,
+  ROW(ROW(421, 'Pine Rd')::street_type, 'Edmonton', 'NL', '84744')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '991666197',
-  ROW('Rebecca', 'H.', 'Young')::full_name_type,
-  ROW(ROW(2828, 'Main St')::street_type, 'Edmonton', 'PE', '17146')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']
+  '889246628',
+  ROW('Lisa', 'G.', 'Hall')::full_name_type,
+  ROW(ROW(8777, 'Washington Ave')::street_type, 'Toronto', 'ON', '58572')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '184026630',
-  ROW('Alex', 'E.', 'Perez')::full_name_type,
-  ROW(ROW(1430, 'Sunset Blvd')::street_type, 'Edmonton', 'AB', '66568')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '870654669',
+  ROW('William', 'O.', 'Hill')::full_name_type,
+  ROW(ROW(1251, 'Washington Ave')::street_type, 'Winnipeg', 'ON', '97475')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '665825827',
-  ROW('Timothy', 'O.', 'Baker')::full_name_type,
-  ROW(ROW(2639, 'Pine Rd')::street_type, 'Winnipeg', 'AB', '39070')::address_type,
-  ARRAY['Chef', 'Front Desk']
+  '578218490',
+  ROW('Jane', 'D.', 'Harris')::full_name_type,
+  ROW(ROW(4866, 'Maple Ave')::street_type, 'Hamilton', 'MB', '89958')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '654907861',
-  ROW('Emily', 'T.', 'Rodriguez')::full_name_type,
-  ROW(ROW(2347, 'Oak St')::street_type, 'Winnipeg', 'MB', '77561')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '455173600',
+  ROW('Cynthia', 'G.', 'Carter')::full_name_type,
+  ROW(ROW(6468, 'Lakeview Dr')::street_type, 'Halifax', 'QC', '39422')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '573757961',
-  ROW('Kenneth', 'B.', 'Lewis')::full_name_type,
-  ROW(ROW(8613, 'Lakeview Dr')::street_type, 'Hamilton', 'BC', '55401')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Front Desk']
+  '825925069',
+  ROW('Ruth', 'R.', 'Rivera')::full_name_type,
+  ROW(ROW(5865, 'Hillcrest Rd')::street_type, 'Quebec City', 'AB', '43035')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '082576457',
-  ROW('Deborah', 'M.', 'Mitchell')::full_name_type,
-  ROW(ROW(5477, 'Hillcrest Rd')::street_type, 'Hamilton', 'AB', '28894')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']
+  '822771078',
+  ROW('Brian', 'F.', 'Baker')::full_name_type,
+  ROW(ROW(5900, 'Lakeview Dr')::street_type, 'Edmonton', 'NS', '17592')::address_type,
+  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '055837844',
-  ROW('Brian', 'T.', 'Walker')::full_name_type,
-  ROW(ROW(104, 'Cedar Ln')::street_type, 'Montreal', 'MB', '84384')::address_type,
-  ARRAY['Chef', 'Front Desk']
+  '071993302',
+  ROW('Daniel', 'G.', 'Brown')::full_name_type,
+  ROW(ROW(4803, 'Hillcrest Rd')::street_type, 'Winnipeg', 'NS', '59049')::address_type,
+  ARRAY['Security', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '615706539',
-  ROW('Thomas', 'L.', 'Lewis')::full_name_type,
-  ROW(ROW(3079, 'Oak St')::street_type, 'Halifax', 'NS', '75457')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '677643151',
+  ROW('Andrew', 'M.', 'Thomas')::full_name_type,
+  ROW(ROW(6121, 'Main St')::street_type, 'Quebec City', 'AB', '63738')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '407052837',
-  ROW('Sharon', 'M.', 'Thompson')::full_name_type,
-  ROW(ROW(9840, 'Sunset Blvd')::street_type, 'Calgary', 'NB', '39944')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Security', 'Front Desk']
+  '195898133',
+  ROW('Rebecca', 'I.', 'Lewis')::full_name_type,
+  ROW(ROW(6712, 'Sunset Blvd')::street_type, 'Halifax', 'AB', '23438')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '924678717',
-  ROW('Cynthia', 'D.', 'Smith')::full_name_type,
-  ROW(ROW(7144, 'Elm St')::street_type, 'Calgary', 'PE', '16960')::address_type,
-  ARRAY['Maintenance', 'Chef', 'Front Desk']
+  '990604057',
+  ROW('Lisa', 'D.', 'Phillips')::full_name_type,
+  ROW(ROW(3680, 'Sunset Blvd')::street_type, 'Ottawa', 'NB', '91001')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '941819173',
-  ROW('Matthew', 'J.', 'Garcia')::full_name_type,
-  ROW(ROW(82, 'Pine Rd')::street_type, 'Vancouver', 'PE', '29443')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '440427032',
+  ROW('Charles', 'O.', 'Brown')::full_name_type,
+  ROW(ROW(1127, 'Washington Ave')::street_type, 'Vancouver', 'NB', '46023')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '869855202',
-  ROW('Betty', 'C.', 'King')::full_name_type,
-  ROW(ROW(6826, 'Oak St')::street_type, 'Quebec City', 'AB', '67226')::address_type,
-  ARRAY['Security', 'Front Desk']
+  '685485024',
+  ROW('Rebecca', 'T.', 'Jackson')::full_name_type,
+  ROW(ROW(8217, 'Maple Ave')::street_type, 'Hamilton', 'NL', '25187')::address_type,
+  ARRAY['Housekeeping', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '938178713',
-  ROW('Donna', 'R.', 'Roberts')::full_name_type,
-  ROW(ROW(7689, 'Lakeview Dr')::street_type, 'Vancouver', 'BC', '81131')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']
+  '265572783',
+  ROW('Mark', 'N.', 'Garcia')::full_name_type,
+  ROW(ROW(5154, 'Cedar Ln')::street_type, 'Quebec City', 'PE', '16655')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '130452574',
-  ROW('John', 'S.', 'Flores')::full_name_type,
-  ROW(ROW(516, 'Sunset Blvd')::street_type, 'Halifax', 'AB', '84299')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '524079219',
+  ROW('Betty', 'E.', 'Perez')::full_name_type,
+  ROW(ROW(3248, 'Main St')::street_type, 'Vancouver', 'SK', '49121')::address_type,
+  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '177504034',
-  ROW('Daniel', 'H.', 'Phillips')::full_name_type,
-  ROW(ROW(8175, 'Washington Ave')::street_type, 'Calgary', 'BC', '95423')::address_type,
-  ARRAY['Maintenance', 'Front Desk']
+  '399241516',
+  ROW('Joseph', 'H.', 'Adams')::full_name_type,
+  ROW(ROW(6611, 'Cedar Ln')::street_type, 'Hamilton', 'BC', '50499')::address_type,
+  ARRAY['Chef', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '686761851',
-  ROW('Cynthia', 'N.', 'Clark')::full_name_type,
-  ROW(ROW(2788, 'Sunset Blvd')::street_type, 'Montreal', 'QC', '86266')::address_type,
-  ARRAY['Housekeeping', 'Security', 'Front Desk']
+  '257622425',
+  ROW('Andrew', 'S.', 'Hernandez')::full_name_type,
+  ROW(ROW(173, 'Oak St')::street_type, 'Winnipeg', 'NS', '18756')::address_type,
+  ARRAY['Manager', 'Front Desk']::TEXT[]
 );
 
 INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '260566806',
-  ROW('Thomas', 'N.', 'Johnson')::full_name_type,
-  ROW(ROW(6011, 'Washington Ave')::street_type, 'Calgary', 'NS', '91715')::address_type,
-  ARRAY['Housekeeping', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '464783976',
-  ROW('Carol', 'T.', 'Lopez')::full_name_type,
-  ROW(ROW(1886, 'Lakeview Dr')::street_type, 'Toronto', 'NL', '47613')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '159586496',
-  ROW('Edward', 'I.', 'Wright')::full_name_type,
-  ROW(ROW(4511, 'Lakeview Dr')::street_type, 'Montreal', 'ON', '90820')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '007632589',
-  ROW('Charles', 'N.', 'Nguyen')::full_name_type,
-  ROW(ROW(2224, 'Main St')::street_type, 'Ottawa', 'QC', '16789')::address_type,
-  ARRAY['Chef', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '836631192',
-  ROW('Betty', 'D.', 'Young')::full_name_type,
-  ROW(ROW(2765, 'Pine Rd')::street_type, 'Edmonton', 'PE', '80946')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '325428893',
-  ROW('Joseph', 'M.', 'Allen')::full_name_type,
-  ROW(ROW(987, 'Hillcrest Rd')::street_type, 'Hamilton', 'ON', '38565')::address_type,
-  ARRAY['Chef', 'Security', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '445137082',
-  ROW('Sarah', 'A.', 'Anderson')::full_name_type,
-  ROW(ROW(6661, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '79293')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '078036064',
-  ROW('Robert', 'N.', 'Smith')::full_name_type,
-  ROW(ROW(5082, 'Washington Ave')::street_type, 'Winnipeg', 'MB', '37047')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '683495883',
-  ROW('David', 'K.', 'Scott')::full_name_type,
-  ROW(ROW(6332, 'Cedar Ln')::street_type, 'Vancouver', 'SK', '24695')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '919194280',
-  ROW('Michael', 'L.', 'White')::full_name_type,
-  ROW(ROW(6468, 'Maple Ave')::street_type, 'Calgary', 'NL', '82948')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '028216063',
-  ROW('Timothy', 'I.', 'Taylor')::full_name_type,
-  ROW(ROW(102, 'Cedar Ln')::street_type, 'Winnipeg', 'NB', '79068')::address_type,
-  ARRAY['Housekeeping', 'Chef', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '837371040',
-  ROW('Rebecca', 'G.', 'Walker')::full_name_type,
-  ROW(ROW(205, 'Cedar Ln')::street_type, 'Winnipeg', 'MB', '28994')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Security', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '709769729',
-  ROW('Sharon', 'K.', 'Green')::full_name_type,
-  ROW(ROW(5392, 'Pine Rd')::street_type, 'Edmonton', 'AB', '26707')::address_type,
-  ARRAY['Chef', 'Security', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '520104353',
-  ROW('Jane', 'Q.', 'Martinez')::full_name_type,
-  ROW(ROW(3051, 'Hillcrest Rd')::street_type, 'Halifax', 'SK', '97036')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '072604297',
-  ROW('Joseph', 'D.', 'Johnson')::full_name_type,
-  ROW(ROW(4645, 'Elm St')::street_type, 'Edmonton', 'QC', '82468')::address_type,
-  ARRAY['Housekeeping', 'Maintenance', 'Chef', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '622427199',
-  ROW('Andrew', 'B.', 'Roberts')::full_name_type,
-  ROW(ROW(191, 'Oak St')::street_type, 'Calgary', 'NL', '34934')::address_type,
-  ARRAY['Security', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '735072856',
-  ROW('Christopher', 'S.', 'Miller')::full_name_type,
-  ROW(ROW(9026, 'Sunset Blvd')::street_type, 'Ottawa', 'NS', '46961')::address_type,
-  ARRAY['Manager', 'Front Desk']
-);
-
-INSERT INTO Employee (SSN, full_name, address, roles) VALUES (
-  '817926845',
-  ROW('Karen', 'M.', 'Torres')::full_name_type,
-  ROW(ROW(5658, 'Sunset Blvd')::street_type, 'Toronto', 'AB', '86399')::address_type,
-  ARRAY['Manager', 'Front Desk']
+  '119301799',
+  ROW('Deborah', 'L.', 'Clark')::full_name_type,
+  ROW(ROW(2525, 'Lakeview Dr')::street_type, 'Montreal', 'NS', '78440')::address_type,
+  ARRAY['Housekeeping', 'Security', 'Front Desk']::TEXT[]
 );
 
 -- Populating Hotels
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
   'chain1',
-  '914866278',
+  '813005711',
   1,
-  10,
+  9,
   'chain1-hotel0@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
   'chain1',
-  '828037229',
-  5,
+  '367078506',
+  2,
   10,
   'chain1-hotel1@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(4726, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '56461')::address_type,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
   'chain1',
-  '333988255',
+  '046535605',
   1,
-  5,
+  9,
   'chain1-hotel2@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(1354, 'Oak St')::street_type, 'Toronto', 'ON', '71945')::address_type,
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type,
   'chain1',
-  '036141556',
-  5,
+  '174417189',
+  4,
   5,
   'chain1-hotel3@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
   'chain1',
-  '236310037',
+  '303024223',
   1,
-  8,
+  9,
   'chain1-hotel4@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
   'chain1',
-  '263644252',
+  '618458890',
   1,
-  7,
+  8,
   'chain1-hotel5@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
   'chain1',
-  '656748374',
-  5,
-  5,
+  '162436337',
+  4,
+  10,
   'chain1-hotel6@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type,
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type,
   'chain1',
-  '001329791',
-  2,
+  '096934380',
+  1,
   5,
   'chain1-hotel7@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  'chain2',
-  '088586446',
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type,
+  'chain1',
+  '542768534',
+  2,
   5,
-  10,
+  'chain1-hotel8@gmail.com',
+  ROW('+1', '416', '1235555')::phone_number_type
+);
+
+INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  'chain1',
+  '002675102',
+  1,
+  9,
+  'chain1-hotel9@gmail.com',
+  ROW('+1', '416', '1235555')::phone_number_type
+);
+
+INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  'chain2',
+  '208521376',
+  2,
+  7,
   'chain2-hotel0@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
   'chain2',
-  '996352733',
-  5,
-  6,
+  '787429085',
+  2,
+  10,
   'chain2-hotel1@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type,
   'chain2',
-  '712858168',
-  2,
-  7,
+  '130494272',
+  4,
+  5,
   'chain2-hotel2@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type,
   'chain2',
-  '747646806',
-  5,
-  9,
+  '538618944',
+  4,
+  6,
   'chain2-hotel3@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
   'chain2',
-  '932734965',
-  5,
-  9,
+  '902288877',
+  3,
+  8,
   'chain2-hotel4@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
   'chain2',
-  '263980558',
-  3,
-  10,
+  '132794318',
+  1,
+  9,
   'chain2-hotel5@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type,
   'chain2',
-  '707665652',
-  2,
-  7,
+  '138655986',
+  3,
+  6,
   'chain2-hotel6@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type,
-  'chain2',
-  '744556144',
-  3,
-  6,
-  'chain2-hotel7@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(8222, 'Washington Ave')::street_type, 'Quebec City', 'PE', '92710')::address_type,
-  'chain2',
-  '150544264',
-  3,
-  5,
-  'chain2-hotel8@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  'chain2',
-  '185805386',
-  3,
-  10,
-  'chain2-hotel9@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type,
   'chain3',
-  '970015010',
+  '818679417',
   1,
-  8,
+  5,
   'chain3-hotel0@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type,
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type,
   'chain3',
-  '587539349',
-  1,
+  '683245390',
+  5,
   6,
   'chain3-hotel1@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type,
   'chain3',
-  '040898753',
-  3,
-  9,
+  '569589943',
+  2,
+  6,
   'chain3-hotel2@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
   'chain3',
-  '701866086',
-  2,
+  '362768625',
+  1,
   9,
   'chain3-hotel3@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
+  ROW(ROW(2500, 'Oak St')::street_type, 'Winnipeg', 'NB', '96740')::address_type,
   'chain3',
-  '111520408',
-  1,
-  10,
+  '931865636',
+  5,
+  5,
   'chain3-hotel4@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
   'chain3',
-  '780981539',
-  5,
-  9,
+  '015852819',
+  1,
+  7,
   'chain3-hotel5@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
   'chain3',
-  '864166166',
-  4,
-  7,
+  '313652237',
+  1,
+  8,
   'chain3-hotel6@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
   'chain3',
-  '235536321',
+  '697863028',
   3,
-  6,
+  8,
   'chain3-hotel7@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  'chain3',
-  '604969049',
-  4,
-  10,
-  'chain3-hotel8@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
+  ROW(ROW(1193, 'Oak St')::street_type, 'Ottawa', 'AB', '72437')::address_type,
   'chain4',
-  '224730780',
-  1,
-  8,
+  '278392644',
+  2,
+  5,
   'chain4-hotel0@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type,
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type,
   'chain4',
-  '993897675',
+  '602054156',
   1,
-  6,
+  5,
   'chain4-hotel1@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type,
+  ROW(ROW(4049, 'Pine Rd')::street_type, 'Vancouver', 'NB', '20411')::address_type,
   'chain4',
-  '376362554',
+  '881315020',
   2,
-  6,
+  5,
   'chain4-hotel2@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type,
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type,
   'chain4',
-  '373829322',
-  1,
+  '363928388',
+  3,
   5,
   'chain4-hotel3@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
   'chain4',
-  '275113226',
-  3,
-  9,
+  '172803588',
+  2,
+  8,
   'chain4-hotel4@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  'chain4',
-  '558597981',
-  1,
-  8,
-  'chain4-hotel5@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  'chain4',
-  '184026630',
-  2,
-  7,
-  'chain4-hotel6@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type,
-  'chain4',
-  '654907861',
-  1,
-  6,
-  'chain4-hotel7@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type,
-  'chain4',
-  '615706539',
-  3,
-  5,
-  'chain4-hotel8@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  'chain4',
-  '941819173',
-  3,
-  9,
-  'chain4-hotel9@gmail.com',
-  ROW('+1', '416', '1235555')::phone_number_type
-);
-
-INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type,
   'chain5',
-  '130452574',
-  3,
-  8,
+  '920804917',
+  4,
+  6,
   'chain5-hotel0@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
   'chain5',
-  '464783976',
+  '547403774',
   3,
-  10,
+  9,
   'chain5-hotel1@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
   'chain5',
-  '159586496',
-  5,
-  6,
+  '519023460',
+  4,
+  10,
   'chain5-hotel2@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
   'chain5',
-  '836631192',
-  2,
-  7,
+  '862444404',
+  4,
+  9,
   'chain5-hotel3@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
   'chain5',
-  '445137082',
-  1,
+  '889246628',
+  2,
   7,
   'chain5-hotel4@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
   'chain5',
-  '078036064',
+  '825925069',
   3,
-  8,
+  10,
   'chain5-hotel5@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
   'chain5',
-  '919194280',
+  '677643151',
   1,
-  5,
+  9,
   'chain5-hotel6@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type,
   'chain5',
-  '520104353',
+  '440427032',
   3,
-  7,
+  5,
   'chain5-hotel7@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
   'chain5',
-  '735072856',
-  2,
-  7,
+  '265572783',
+  5,
+  9,
   'chain5-hotel8@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
 
 INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, phone_num) VALUES (
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type,
   'chain5',
-  '817926845',
-  3,
-  10,
+  '257622425',
+  5,
+  5,
   'chain5-hotel9@gmail.com',
   ROW('+1', '416', '1235555')::phone_number_type
 );
@@ -1334,4840 +1145,4023 @@ INSERT INTO Hotel (address, chain_id, manager_SSN, num_stars, num_rooms, email, 
 -- Populating Rooms
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  1404.88,
-  1,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  3464.21,
+  2,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['Pool', 'Hot Tub'],
-  ARRAY['Chipped Paint', 'Mould']
+  TRUE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  6162.48,
-  3,
-  FALSE,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  9973.62,
+  5,
+  TRUE,
   FALSE,
   TRUE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY['Roaches']
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  9617.84,
-  4,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  2593.43,
+  3,
+  FALSE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub'],
-  ARRAY['Chipped Paint', 'Roaches']
+  ARRAY['On Suite', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  6985.08,
-  2,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  5610.49,
+  5,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['On Suite', 'Pool', 'Personal Chef'],
-  ARRAY['Roaches', 'Weird Smell']
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  8501.80,
-  3,
-  FALSE,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  7943.45,
+  5,
+  TRUE,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  6438.98,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  8028.68,
   1,
-  TRUE,
+  FALSE,
   FALSE,
   TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  3842.01,
-  3,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  6559.05,
+  4,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
+  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  3828.13,
-  4,
-  FALSE,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  9795.77,
+  2,
   TRUE,
   FALSE,
-  ARRAY['Kitchen'],
-  ARRAY['Leaking Faucet']
+  TRUE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Mould', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  2620.01,
-  1,
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type,
+  4813.01,
+  3,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY['Mould']
+  ARRAY['Pool', 'Personal Chef']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  6870.28,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  1361.80,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  7592.92,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  5395.22,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  961.75,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  4551.21,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  2463.71,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  2310.02,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  9,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  1961.58,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   10,
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type,
-  6545.33,
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type,
+  3375.64,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  8837.39,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  8592.04,
   4,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  1554.94,
-  2,
-  FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  9146.56,
-  1,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Working Fridge'],
-  ARRAY['Chipped Paint']
+  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  4164.14,
-  2,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  2591.47,
+  3,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Chipped Paint', 'Mould']
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  1988.49,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  7260.29,
   2,
-  TRUE,
   FALSE,
   TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
+  FALSE,
+  ARRAY['Kitchen', 'Pool']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  5917.74,
-  4,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  667.01,
+  2,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
+  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  7963.12,
-  5,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  8485.55,
+  3,
+  FALSE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Leaking Faucet', 'Roaches']
+  ARRAY['On Suite']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  5307.95,
-  3,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  7468.59,
+  4,
+  TRUE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY['Roaches', 'Weird Smell']
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  9229.69,
-  1,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  5815.45,
+  2,
   TRUE,
   FALSE,
-  FALSE,
-  ARRAY['Pool', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
+  TRUE,
+  ARRAY['On Suite', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  1352.53,
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type,
+  8468.31,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type,
+  6467.78,
+  1,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Kitchen']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type,
+  8096.08,
+  1,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Hot Tub', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type,
+  6056.22,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type,
+  3924.03,
+  4,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type,
+  9483.49,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  5489.43,
+  3,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  5309.59,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  6067.85,
+  4,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  6926.58,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Leaking Faucet', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  3945.20,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  2384.80,
+  5,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  903.67,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  9223.18,
+  5,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  9,
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type,
+  873.25,
+  3,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Mould', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  5985.62,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  8851.22,
   1,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Pool', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Chipped Paint', 'Roaches']
+  ARRAY['Hot Tub', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  72.33,
+  5,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  3348.43,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  548.74,
+  4,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  3847.79,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  6165.53,
+  1,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type,
+  8071.24,
+  3,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  2828.03,
+  3,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  9792.47,
+  5,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  8882.30,
+  3,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  5657.01,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  9351.20,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  3391.06,
+  5,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  1482.79,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  9769.32,
+  4,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  9,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  533.88,
+  2,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Pool', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   10,
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type,
-  7910.78,
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type,
+  6068.88,
   5,
   FALSE,
+  FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Hot Tub', 'Personal Chef'],
-  ARRAY['Roaches', 'Weird Smell']
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(4726, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '56461')::address_type,
-  1114.08,
-  2,
-  FALSE,
-  FALSE,
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type,
+  5625.51,
+  3,
   TRUE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
+  FALSE,
+  FALSE,
+  ARRAY['Pool', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(4726, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '56461')::address_type,
-  8117.64,
-  4,
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type,
+  1899.98,
+  1,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['On Suite', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Weird Smell']
+  ARRAY['On Suite', 'Kitchen']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(4726, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '56461')::address_type,
-  5968.63,
-  2,
-  TRUE,
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type,
+  8919.73,
+  5,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Pool'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
+  FALSE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(4726, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '56461')::address_type,
-  7334.40,
-  5,
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type,
+  6415.52,
+  4,
+  TRUE,
   FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub', 'Personal Chef'],
-  ARRAY['Roaches', 'Weird Smell']
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(4726, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '56461')::address_type,
-  6501.40,
-  1,
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type,
+  2364.80,
+  5,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY[]
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(1354, 'Oak St')::street_type, 'Toronto', 'ON', '71945')::address_type,
-  1499.33,
-  1,
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type,
+  4628.43,
+  2,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY['Chipped Paint']
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(1354, 'Oak St')::street_type, 'Toronto', 'ON', '71945')::address_type,
-  2246.80,
-  5,
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type,
+  8066.09,
+  2,
+  TRUE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Roaches']
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(1354, 'Oak St')::street_type, 'Toronto', 'ON', '71945')::address_type,
-  9337.20,
-  2,
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type,
+  6259.46,
+  1,
+  FALSE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Roaches', 'Weird Smell']
+  ARRAY['Pool', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(1354, 'Oak St')::street_type, 'Toronto', 'ON', '71945')::address_type,
-  9164.07,
-  1,
-  TRUE,
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type,
+  6184.67,
+  5,
+  FALSE,
   FALSE,
   TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
+  ARRAY['On Suite', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(1354, 'Oak St')::street_type, 'Toronto', 'ON', '71945')::address_type,
-  3663.31,
-  2,
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type,
+  1007.05,
+  3,
+  FALSE,
   TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Weird Smell']
+  TRUE,
+  ARRAY['Pool', 'Personal Chef']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  1989.89,
-  3,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  7022.05,
+  2,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['On Suite', 'Hot Tub']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  786.30,
-  3,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  190.60,
+  2,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Chipped Paint', 'Weird Smell']
+  ARRAY['Pool', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  8811.22,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  4132.30,
   1,
-  TRUE,
   FALSE,
   TRUE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  5255.36,
-  4,
-  TRUE,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  4456.79,
+  5,
   FALSE,
   FALSE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY['Chipped Paint', 'Weird Smell']
+  FALSE,
+  ARRAY['On Suite', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  4897.87,
-  5,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  2031.63,
+  2,
+  FALSE,
   TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
+  TRUE,
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  9923.82,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  3878.93,
   2,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Roaches']
+  ARRAY['Pool', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  6698.93,
-  1,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  1283.15,
+  4,
+  FALSE,
   TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Pool', 'Personal Chef'],
-  ARRAY[]
+  TRUE,
+  ARRAY['Pool', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type,
-  3624.49,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
-  932.44,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
-  1192.75,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Pool', 'Personal Chef'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
-  7055.08,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
-  3877.13,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
-  8097.06,
-  5,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
-  8156.17,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type,
-  8936.30,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Hot Tub'],
-  ARRAY['Chipped Paint', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type,
-  361.00,
-  1,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type,
-  691.81,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type,
-  5894.39,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  1407.21,
   2,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type,
-  9111.16,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Pool', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type,
-  2586.54,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type,
-  2761.45,
-  2,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type,
-  7218.53,
-  2,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type,
-  8466.87,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type,
-  5580.80,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type,
-  8077.43,
-  4,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  3478.48,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  2445.12,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Personal Chef'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  411.76,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  994.34,
-  1,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  1387.74,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Pool', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  8644.53,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  3920.97,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  3421.95,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY['Roaches', 'Weird Smell']
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  1032.68,
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type,
+  4903.30,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  328.84,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  5981.55,
+  2,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  8411.93,
+  4,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  8347.84,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  9559.74,
   4,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Pool', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['On Suite']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  2720.11,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type,
+  4874.89,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  8325.59,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  9875.29,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  2831.06,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  4132.03,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  939.15,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  6517.76,
+  1,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  1795.65,
+  1,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY['Mould', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  6748.89,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  9,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  3510.30,
+  5,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   10,
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type,
-  402.76,
-  5,
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type,
+  1472.80,
+  2,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Kitchen', 'Pool', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type,
-  9373.45,
-  5,
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type,
+  9240.30,
+  4,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Leaking Faucet', 'Roaches']
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type,
-  3905.83,
-  2,
-  FALSE,
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type,
+  9649.80,
+  5,
   TRUE,
   FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
+  TRUE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type,
-  4132.38,
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type,
+  3662.59,
   5,
-  TRUE,
   FALSE,
   TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Roaches']
+  FALSE,
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type,
-  8098.56,
-  4,
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type,
+  1480.98,
+  3,
   FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type,
-  7172.59,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type,
-  6141.72,
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type,
+  5770.65,
   1,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
+  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
-  8936.60,
-  5,
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type,
+  7928.05,
+  1,
+  FALSE,
+  FALSE,
   TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Personal Chef'],
-  ARRAY[]
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
-  1456.75,
-  4,
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type,
+  8134.05,
+  3,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['Pool'],
-  ARRAY['Chipped Paint', 'Mould']
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
-  8418.91,
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type,
+  6372.46,
   1,
   FALSE,
-  FALSE,
   TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Chipped Paint', 'Roaches']
+  TRUE,
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
-  7684.51,
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type,
+  4461.88,
   2,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
-  8299.63,
-  1,
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type,
+  3016.29,
+  3,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite', 'Hot Tub'],
-  ARRAY[]
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
-  6426.89,
-  4,
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type,
+  191.33,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  8791.06,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  7036.38,
+  1,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY[]
+  ARRAY['On Suite', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  8714.30,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Hot Tub', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  4072.17,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  4076.68,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  2749.26,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type,
-  1734.21,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  3053.18,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  7203.91,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  9111.07,
   1,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  1710.66,
-  4,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  952.17,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Pool', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  5592.36,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  1358.95,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Pool', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  9255.47,
-  1,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Weird Smell']
+  ARRAY['Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  8560.44,
-  2,
-  FALSE,
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type,
+  9183.14,
+  3,
   TRUE,
   FALSE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type,
-  479.65,
-  4,
   FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  3097.18,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  1889.06,
   1,
-  FALSE,
   TRUE,
   FALSE,
-  ARRAY['Working Fridge'],
-  ARRAY['Leaking Faucet', 'Mould']
+  FALSE,
+  ARRAY['On Suite', 'Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  9434.52,
-  3,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  3459.21,
+  5,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Working Fridge'],
-  ARRAY['Chipped Paint']
+  TRUE,
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  5487.93,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  5718.83,
   1,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['Working Fridge'],
-  ARRAY[]
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  2124.11,
-  5,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  5023.34,
+  2,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Kitchen', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  1396.48,
-  3,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  8497.35,
+  4,
+  FALSE,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY['Chipped Paint']
+  ARRAY['Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  8220.64,
-  2,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  4193.15,
+  3,
   FALSE,
-  TRUE,
   FALSE,
-  ARRAY['Kitchen'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Pool', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  1522.64,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  5978.51,
   1,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY[]
+  TRUE,
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  4068.12,
-  1,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  9236.28,
+  5,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Mould']
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type,
-  9259.65,
-  3,
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type,
+  2510.17,
+  1,
   FALSE,
   FALSE,
   TRUE,
-  ARRAY['Pool', 'Personal Chef'],
-  ARRAY[]
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  7367.64,
-  4,
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type,
+  97.36,
+  3,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY[]
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  1912.89,
-  3,
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type,
+  1657.56,
+  5,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY['Leaking Faucet', 'Roaches']
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  5559.13,
-  1,
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type,
+  27.04,
+  3,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
+  FALSE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  4313.35,
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type,
+  5683.45,
   5,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  6880.34,
-  3,
-  TRUE,
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type,
+  1354.57,
+  4,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Pool', 'Working Fridge'],
-  ARRAY[]
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  3161.45,
-  5,
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type,
+  5786.51,
+  3,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['Pool'],
-  ARRAY['Chipped Paint', 'Weird Smell']
+  ARRAY['Pool', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  4489.61,
+  1,
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type,
+  4243.73,
+  4,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type,
+  2541.93,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type,
+  7165.26,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type,
+  6843.61,
   1,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Pool'],
-  ARRAY['Mould', 'Weird Smell']
+  ARRAY['On Suite', 'Pool', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type,
+  4227.90,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type,
+  5323.54,
+  4,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type,
+  4642.31,
+  2,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type,
+  1032.09,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type,
+  8874.41,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type,
+  9491.14,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Hot Tub', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type,
+  8810.75,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type,
+  6579.13,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Hot Tub']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type,
+  9301.62,
+  1,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type,
+  135.06,
+  5,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type,
+  1506.09,
+  1,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type,
+  4824.44,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type,
+  3886.53,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  7391.19,
+  2,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  8388.46,
+  5,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  5708.20,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  25.79,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  8916.68,
+  1,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  4557.85,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  4881.92,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  3758.08,
-  2,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  4330.17,
+  5,
+  FALSE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Weird Smell']
+  ARRAY['On Suite', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  2104.27,
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type,
+  3169.96,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(2500, 'Oak St')::street_type, 'Winnipeg', 'NB', '96740')::address_type,
+  8438.02,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(2500, 'Oak St')::street_type, 'Winnipeg', 'NB', '96740')::address_type,
+  4894.48,
+  4,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Kitchen', 'Pool', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(2500, 'Oak St')::street_type, 'Winnipeg', 'NB', '96740')::address_type,
+  504.46,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(2500, 'Oak St')::street_type, 'Winnipeg', 'NB', '96740')::address_type,
+  6611.65,
+  1,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(2500, 'Oak St')::street_type, 'Winnipeg', 'NB', '96740')::address_type,
+  5024.01,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
+  2587.44,
+  4,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
+  4154.77,
+  2,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
+  4470.91,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
+  8605.17,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
+  2906.21,
+  4,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY['Mould', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
+  3072.35,
+  2,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type,
+  734.72,
+  3,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  9334.53,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  3957.63,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  5207.89,
+  5,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  1467.28,
   2,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['Pool', 'Hot Tub'],
-  ARRAY['Chipped Paint', 'Roaches']
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  4088.80,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  5215.82,
+  3,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  6024.30,
+  4,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type,
+  4914.55,
+  1,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  35.91,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  1840.60,
+  4,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  8900.47,
+  2,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  9226.98,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  7482.20,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  8839.97,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  561.09,
+  1,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type,
+  8134.62,
+  4,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(1193, 'Oak St')::street_type, 'Ottawa', 'AB', '72437')::address_type,
+  7920.30,
+  2,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(1193, 'Oak St')::street_type, 'Ottawa', 'AB', '72437')::address_type,
+  7262.52,
+  3,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Kitchen', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(1193, 'Oak St')::street_type, 'Ottawa', 'AB', '72437')::address_type,
+  7003.81,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(1193, 'Oak St')::street_type, 'Ottawa', 'AB', '72437')::address_type,
+  7550.24,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(1193, 'Oak St')::street_type, 'Ottawa', 'AB', '72437')::address_type,
+  2826.06,
+  1,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type,
+  4841.05,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet', 'Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type,
+  2480.91,
+  1,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type,
+  1531.51,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type,
+  5914.92,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type,
+  2306.36,
+  4,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(4049, 'Pine Rd')::street_type, 'Vancouver', 'NB', '20411')::address_type,
+  2009.28,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(4049, 'Pine Rd')::street_type, 'Vancouver', 'NB', '20411')::address_type,
+  5144.04,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(4049, 'Pine Rd')::street_type, 'Vancouver', 'NB', '20411')::address_type,
+  6941.12,
+  1,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(4049, 'Pine Rd')::street_type, 'Vancouver', 'NB', '20411')::address_type,
+  8667.16,
+  1,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(4049, 'Pine Rd')::street_type, 'Vancouver', 'NB', '20411')::address_type,
+  3664.82,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type,
+  1299.67,
+  5,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type,
+  2595.12,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type,
+  7411.80,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen', 'Pool', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type,
+  552.55,
+  3,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type,
+  4249.97,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  2801.44,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  2426.74,
+  1,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  8738.06,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  6440.36,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  6281.59,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  3515.77,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  2704.34,
+  3,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type,
+  1520.09,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type,
+  3871.52,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type,
+  7632.94,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY['Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type,
+  5344.89,
+  4,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type,
+  6978.69,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type,
+  8409.63,
+  3,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type,
+  4782.16,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  9826.78,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  8023.54,
+  3,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  5879.14,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  2606.47,
+  5,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Kitchen', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  5398.38,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite', 'Pool', 'Personal Chef']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  6275.32,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  9010.41,
+  1,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  9930.80,
+  5,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  9,
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type,
+  659.88,
+  4,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  42.34,
+  1,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  9179.01,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  2748.58,
+  2,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  6066.98,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  4886.58,
+  1,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Pool', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  2733.69,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  9863.93,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  5785.32,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  9,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  985.85,
+  1,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Mould', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   10,
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type,
-  2860.13,
-  4,
-  FALSE,
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type,
+  8773.98,
+  3,
+  TRUE,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY['Chipped Paint']
+  ARRAY['On Suite', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
-  925.13,
-  3,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  9931.80,
+  1,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Weird Smell']
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
-  9286.84,
-  3,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  9741.99,
+  5,
+  TRUE,
   FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Mould']
+  FALSE,
+  ARRAY['On Suite', 'Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
-  2541.28,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  7997.18,
+  4,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  5606.81,
   2,
   TRUE,
   FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
-  9397.40,
-  5,
-  FALSE,
   TRUE,
-  FALSE,
-  ARRAY['Pool', 'Working Fridge'],
-  ARRAY['Mould', 'Weird Smell']
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
-  416.72,
-  4,
-  TRUE,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  9682.85,
+  5,
   FALSE,
   TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY[]
+  TRUE,
+  ARRAY['On Suite', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
-  8954.56,
-  1,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  2269.74,
+  4,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY['Leaking Faucet', 'Mould']
+  ARRAY['Pool', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Leaking Faucet', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type,
-  8648.66,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type,
-  458.99,
-  4,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub', 'Personal Chef'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type,
-  4465.98,
-  4,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type,
-  6276.61,
-  3,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type,
-  8445.56,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type,
-  4951.74,
-  4,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type,
-  8232.85,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool', 'Hot Tub'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(8222, 'Washington Ave')::street_type, 'Quebec City', 'PE', '92710')::address_type,
-  3537.43,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(8222, 'Washington Ave')::street_type, 'Quebec City', 'PE', '92710')::address_type,
-  9296.49,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(8222, 'Washington Ave')::street_type, 'Quebec City', 'PE', '92710')::address_type,
-  6305.37,
-  2,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool', 'Personal Chef'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(8222, 'Washington Ave')::street_type, 'Quebec City', 'PE', '92710')::address_type,
-  1377.85,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(8222, 'Washington Ave')::street_type, 'Quebec City', 'PE', '92710')::address_type,
-  821.91,
-  1,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  315.72,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool', 'Hot Tub'],
-  ARRAY['Leaking Faucet', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  857.36,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  2926.18,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  3614.41,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool', 'Working Fridge'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  153.97,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  4508.48,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  8657.71,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  1147.24,
   5,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY[]
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  2353.04,
-  1,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  142.41,
+  4,
+  FALSE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  5192.33,
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type,
+  7006.75,
+  4,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Hot Tub']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
+  375.80,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
+  7481.63,
+  2,
+  FALSE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool', 'Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
+  1570.08,
+  4,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['On Suite'],
-  ARRAY[]
+  ARRAY['Pool', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
+  9480.98,
+  2,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
+  5354.87,
+  5,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
+  1593.15,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type,
+  3759.52,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  9301.77,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  331.24,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  6389.47,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Kitchen', 'Pool', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  845.72,
+  1,
+  FALSE,
+  FALSE,
+  TRUE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  4940.15,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  6,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  7391.33,
+  5,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  7,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  9284.43,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Pool', 'Personal Chef', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  8,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  4100.11,
+  2,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  9,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  2845.83,
+  3,
+  FALSE,
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   10,
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type,
-  7091.81,
-  4,
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type,
+  3143.03,
+  3,
+  FALSE,
   TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Weird Smell']
+  TRUE,
+  ARRAY['On Suite']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  4433.83,
-  4,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  2244.08,
+  3,
   FALSE,
-  TRUE,
   FALSE,
-  ARRAY['Pool'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Pool', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  7012.97,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  5357.82,
   4,
   FALSE,
-  TRUE,
   FALSE,
-  ARRAY['Pool', 'Working Fridge'],
-  ARRAY[]
+  FALSE,
+  ARRAY['On Suite', 'Kitchen', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  4068.62,
-  2,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  901.96,
+  1,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
+  ARRAY['On Suite', 'Pool']::TEXT[],
+  ARRAY['Leaking Faucet', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  6695.96,
-  4,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  3164.08,
+  2,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Pool'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Kitchen', 'Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  1982.86,
-  2,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  6424.70,
+  1,
+  TRUE,
   FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub', 'Personal Chef'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Pool', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  3556.02,
-  2,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  2388.96,
+  5,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY['Leaking Faucet', 'Mould']
+  TRUE,
+  ARRAY['Hot Tub']::TEXT[],
+  ARRAY['Chipped Paint', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  5038.38,
-  1,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  2620.95,
+  2,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['Pool'],
-  ARRAY['Mould', 'Weird Smell']
+  TRUE,
+  ARRAY['On Suite', 'Working Fridge']::TEXT[],
+  ARRAY['Leaking Faucet']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type,
-  6416.52,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Personal Chef'],
-  ARRAY['Chipped Paint', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type,
-  2245.59,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type,
-  4806.87,
-  3,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type,
-  6341.61,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type,
-  9594.25,
-  3,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Pool', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type,
-  7449.78,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type,
-  624.97,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  3545.04,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  613.08,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  5065.79,
-  4,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  6894.72,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  6655.27,
-  5,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub', 'Working Fridge'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  8189.27,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  9955.12,
   1,
   FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Hot Tub', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  5934.36,
-  5,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  5761.53,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Mould']
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type,
-  5404.26,
-  4,
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type,
+  5664.43,
+  5,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  3739.78,
-  1,
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type,
+  4778.69,
+  3,
+  TRUE,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Chipped Paint', 'Weird Smell']
+  ARRAY['On Suite', 'Kitchen', 'Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  6236.50,
-  5,
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type,
+  8883.40,
+  3,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
+  ARRAY['Hot Tub', 'Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  3458.39,
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type,
+  6750.65,
+  5,
+  TRUE,
+  FALSE,
+  TRUE,
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Weird Smell']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  4,
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type,
+  7657.71,
+  1,
+  TRUE,
+  FALSE,
+  FALSE,
+  ARRAY['Hot Tub', 'Personal Chef']::TEXT[],
+  ARRAY['Mould', 'Roaches']::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  5,
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type,
+  6770.74,
   1,
   FALSE,
   TRUE,
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  1,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  3091.56,
+  4,
+  FALSE,
   TRUE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  2,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  2273.85,
+  3,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Kitchen', 'Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
+);
+
+INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
+  3,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  1917.52,
+  5,
+  FALSE,
+  TRUE,
+  FALSE,
+  ARRAY['On Suite', 'Hot Tub']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  3238.50,
-  4,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  4199.94,
+  3,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Roaches']
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Mould', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  2598.98,
-  3,
-  FALSE,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  5181.66,
+  2,
   FALSE,
   TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Mould', 'Weird Smell']
+  FALSE,
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   6,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  2209.01,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  4500.63,
   5,
   FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Pool'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
+  TRUE,
+  TRUE,
+  ARRAY['On Suite', 'Kitchen']::TEXT[],
+  ARRAY['Roaches', 'Weird Smell']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   7,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  2634.26,
-  2,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  5807.62,
+  5,
+  FALSE,
   FALSE,
   TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Hot Tub'],
-  ARRAY[]
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   8,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  5936.04,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  9729.40,
   2,
-  FALSE,
   TRUE,
   FALSE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY['Chipped Paint', 'Weird Smell']
+  TRUE,
+  ARRAY['On Suite', 'Kitchen', 'Pool']::TEXT[],
+  ARRAY['Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   9,
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type,
-  3688.37,
-  5,
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type,
+  478.62,
+  4,
+  TRUE,
   FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
+  FALSE,
+  ARRAY['Personal Chef']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   1,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  6713.81,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  9545.37,
-  1,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  4475.27,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  7689.22,
-  4,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  296.33,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  422.47,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  1395.77,
-  5,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  9611.53,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  7097.19,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Hot Tub', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  10,
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type,
-  5035.72,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  377.24,
-  3,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  9055.90,
-  5,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  3922.72,
-  5,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  5546.14,
-  5,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  4039.18,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  6706.25,
-  2,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  1820.24,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  1785.01,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type,
-  7550.33,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
-  3373.08,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
-  2387.42,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
-  3492.94,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
-  4337.63,
-  4,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
-  1425.13,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
-  259.19,
-  1,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type,
-  6596.53,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Personal Chef'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type,
-  5445.81,
-  2,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type,
-  100.31,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type,
-  8919.05,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type,
-  8873.13,
-  5,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type,
-  380.52,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type,
-  1626.00,
-  2,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  5430.62,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Chipped Paint', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  9577.04,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  6441.07,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  2332.06,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  8024.44,
-  1,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  2977.36,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  2069.04,
-  4,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Pool', 'Personal Chef'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  3330.18,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  1213.33,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  10,
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type,
-  1939.65,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  1980.10,
-  5,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY['Chipped Paint', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  9125.87,
-  3,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  8077.88,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  4693.13,
-  2,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  3582.22,
-  4,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  4872.20,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  8537.56,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type,
-  5782.59,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type,
-  7975.15,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type,
-  2429.21,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Hot Tub'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type,
-  4287.07,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type,
-  993.95,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type,
-  6478.81,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type,
-  4574.94,
-  5,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type,
-  9690.34,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type,
-  3530.70,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type,
-  9356.51,
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type,
+  3506.39,
   1,
   TRUE,
   FALSE,
   TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type,
-  5920.59,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type,
-  2960.19,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool', 'Personal Chef'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type,
-  6175.87,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type,
-  8159.37,
-  2,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Roaches']
+  ARRAY['Kitchen']::TEXT[],
+  ARRAY[]::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   2,
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type,
-  1142.68,
-  5,
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type,
+  5843.49,
+  3,
   FALSE,
   TRUE,
-  TRUE,
-  ARRAY['Kitchen'],
-  ARRAY[]
+  FALSE,
+  ARRAY['On Suite', 'Hot Tub']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   3,
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type,
-  1161.26,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type,
-  4578.25,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type,
-  6165.18,
-  1,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  3427.12,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  8704.70,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool', 'Hot Tub', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  6266.84,
-  1,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  478.04,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  8785.47,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  7502.67,
-  5,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  8680.43,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Hot Tub'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  8518.68,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type,
-  2099.80,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  7261.38,
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type,
+  6936.52,
   1,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  1110.93,
-  1,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  9097.41,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool', 'Personal Chef'],
-  ARRAY['Mould', 'Roaches']
+  ARRAY['Pool']::TEXT[],
+  ARRAY['Leaking Faucet', 'Mould']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   4,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  7733.80,
-  2,
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type,
+  9882.15,
+  4,
   FALSE,
   TRUE,
   FALSE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY[]
+  ARRAY['On Suite']::TEXT[],
+  ARRAY['Roaches']::TEXT[]
 );
 
 INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
   5,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  519.14,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  3783.56,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Hot Tub', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  9191.87,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool', 'Hot Tub', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type,
-  4072.14,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  8040.30,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  4806.62,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Hot Tub', 'Personal Chef'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  2922.08,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  9477.93,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  4475.22,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  7976.64,
-  1,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type,
-  1946.08,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type,
-  6453.27,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type,
-  6905.62,
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type,
+  2223.73,
   3,
   FALSE,
   TRUE,
   TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type,
-  2289.85,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type,
-  8396.60,
-  4,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type,
-  44.72,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type,
-  5162.11,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY['Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type,
-  3660.57,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Pool'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type,
-  8400.80,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type,
-  7571.30,
-  5,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool', 'Hot Tub', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type,
-  7715.67,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type,
-  9502.03,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  335.96,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  8267.59,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  3334.61,
-  1,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  5103.44,
-  5,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  7572.54,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  6556.64,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  5580.81,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  202.77,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type,
-  5307.62,
-  5,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  5412.10,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  1192.78,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  7941.34,
-  3,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  4276.53,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  4675.71,
-  5,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  1623.79,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  6428.54,
-  3,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Hot Tub', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type,
-  4230.77,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  2725.18,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  6238.79,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  7426.53,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  5590.13,
-  5,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  7579.35,
-  1,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY['Leaking Faucet', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  8724.39,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Chipped Paint', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  3027.19,
-  2,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  7720.07,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  7643.48,
-  1,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  10,
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type,
-  2074.24,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type,
-  5709.87,
-  2,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type,
-  776.92,
-  4,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Pool', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type,
-  6268.94,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type,
-  5489.66,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type,
-  3932.94,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub', 'Working Fridge'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type,
-  8229.45,
-  1,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
-  9975.75,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY['Chipped Paint', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
-  8324.50,
-  5,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Hot Tub', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
-  9487.64,
-  1,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Hot Tub', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
-  3521.62,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Working Fridge'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
-  101.87,
-  3,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
-  9142.02,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type,
-  7266.82,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
-  9988.21,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
-  3006.72,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
-  8110.57,
-  1,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
-  4968.76,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
-  6692.52,
-  4,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
-  2737.87,
-  2,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Pool'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type,
-  2187.79,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  4301.25,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  4959.19,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Mould', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  2409.68,
-  5,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  6250.84,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Working Fridge'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  3652.37,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Personal Chef'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  6441.89,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  2488.91,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type,
-  4906.51,
-  4,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type,
-  3054.62,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type,
-  3764.98,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen', 'Personal Chef'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type,
-  876.88,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Pool'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type,
-  7896.52,
-  3,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['Pool', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type,
-  9912.21,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
-  3536.82,
-  3,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite', 'Kitchen'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
-  3404.69,
-  1,
-  FALSE,
-  FALSE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
-  1340.05,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
-  5286.00,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub', 'Personal Chef'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
-  7672.61,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Hot Tub', 'Working Fridge'],
-  ARRAY['Leaking Faucet', 'Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
-  3067.58,
-  4,
-  TRUE,
-  FALSE,
-  FALSE,
-  ARRAY['On Suite', 'Personal Chef'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type,
-  3895.05,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Working Fridge'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
-  548.03,
-  4,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef'],
-  ARRAY['Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
-  2298.08,
-  1,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['On Suite', 'Pool', 'Personal Chef'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
-  3765.76,
-  1,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
-  2714.78,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY['Chipped Paint', 'Mould']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
-  888.79,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY['Leaking Faucet']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
-  8154.46,
-  2,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen'],
-  ARRAY['Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type,
-  8508.09,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  1,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  8271.16,
-  4,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen'],
-  ARRAY['Mould', 'Roaches']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  2,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  4290.14,
-  2,
-  TRUE,
-  FALSE,
-  TRUE,
-  ARRAY['Personal Chef', 'Working Fridge'],
-  ARRAY['Roaches', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  3,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  625.10,
-  3,
-  FALSE,
-  FALSE,
-  FALSE,
-  ARRAY['Kitchen', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  4,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  2536.72,
-  3,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  5,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  9502.35,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Kitchen', 'Pool', 'Hot Tub'],
-  ARRAY['Leaking Faucet', 'Weird Smell']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  6,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  9820.66,
-  5,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Pool'],
-  ARRAY['Chipped Paint']
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  7,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  4255.65,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['On Suite', 'Kitchen', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  8,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  4472.48,
-  3,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Pool', 'Personal Chef', 'Working Fridge'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  9,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  7654.80,
-  4,
-  FALSE,
-  TRUE,
-  TRUE,
-  ARRAY['Kitchen', 'Hot Tub'],
-  ARRAY[]
-);
-
-INSERT INTO Room (room_num, hotel_address, price, capacity, sea_view, mountain_view, extendable, amenities, damages) VALUES (
-  10,
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type,
-  915.50,
-  1,
-  FALSE,
-  TRUE,
-  FALSE,
-  ARRAY['Personal Chef'],
-  ARRAY['Weird Smell']
+  ARRAY['Working Fridge']::TEXT[],
+  ARRAY['Chipped Paint']::TEXT[]
 );
 
 -- Populating WorksAt
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '914866278',
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type
+  '813005711',
+  ROW(ROW(940, 'Main St')::street_type, 'Ottawa', 'NS', '98066')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '601752073',
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type
+  '367078506',
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '174965681',
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type
+  '886320633',
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '232409466',
-  ROW(ROW(6109, 'Cedar Ln')::street_type, 'Vancouver', 'NB', '52856')::address_type
+  '342585002',
+  ROW(ROW(3379, 'Washington Ave')::street_type, 'Halifax', 'NL', '73939')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '828037229',
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type
+  '046535605',
+  ROW(ROW(2964, 'Washington Ave')::street_type, 'Ottawa', 'NL', '29678')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '702719651',
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type
+  '174417189',
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '748191030',
-  ROW(ROW(6409, 'Lakeview Dr')::street_type, 'Ottawa', 'QC', '32728')::address_type
+  '359242468',
+  ROW(ROW(6103, 'Oak St')::street_type, 'Halifax', 'NL', '19831')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '333988255',
-  ROW(ROW(4726, 'Sunset Blvd')::street_type, 'Vancouver', 'SK', '56461')::address_type
+  '303024223',
+  ROW(ROW(7959, 'Sunset Blvd')::street_type, 'Montreal', 'SK', '41995')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '036141556',
-  ROW(ROW(1354, 'Oak St')::street_type, 'Toronto', 'ON', '71945')::address_type
+  '618458890',
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '236310037',
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type
+  '755925993',
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '474720539',
-  ROW(ROW(7819, 'Washington Ave')::street_type, 'Winnipeg', 'NB', '20906')::address_type
+  '025508499',
+  ROW(ROW(5065, 'Washington Ave')::street_type, 'Halifax', 'PE', '85584')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '263644252',
-  ROW(ROW(7117, 'Sunset Blvd')::street_type, 'Quebec City', 'MB', '80550')::address_type
+  '162436337',
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '656748374',
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type
+  '436709402',
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '685497503',
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type
+  '541652304',
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '625787228',
-  ROW(ROW(6421, 'Cedar Ln')::street_type, 'Hamilton', 'MB', '70747')::address_type
+  '467206954',
+  ROW(ROW(9095, 'Sunset Blvd')::street_type, 'Hamilton', 'MB', '91425')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '001329791',
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type
+  '096934380',
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '969586120',
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type
+  '457293025',
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '647963300',
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type
+  '640382924',
+  ROW(ROW(4725, 'Lakeview Dr')::street_type, 'Ottawa', 'NS', '28756')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '541749497',
-  ROW(ROW(6533, 'Cedar Ln')::street_type, 'Edmonton', 'AB', '13128')::address_type
+  '542768534',
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '088586446',
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type
+  '595681702',
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '077862089',
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type
+  '784056379',
+  ROW(ROW(4390, 'Hillcrest Rd')::street_type, 'Vancouver', 'SK', '62849')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '549918155',
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type
+  '002675102',
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '625613270',
-  ROW(ROW(991, 'Main St')::street_type, 'Halifax', 'NL', '43192')::address_type
+  '660819910',
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '996352733',
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type
+  '000387566',
+  ROW(ROW(7186, 'Maple Ave')::street_type, 'Quebec City', 'MB', '75116')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '919439898',
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type
+  '208521376',
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '258445530',
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type
+  '482420509',
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '907080852',
-  ROW(ROW(5806, 'Washington Ave')::street_type, 'Halifax', 'AB', '66703')::address_type
+  '785515133',
+  ROW(ROW(3733, 'Washington Ave')::street_type, 'Montreal', 'AB', '44065')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '712858168',
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type
+  '787429085',
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '411911154',
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type
+  '815684930',
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '015935291',
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type
+  '945905397',
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '146118867',
-  ROW(ROW(518, 'Cedar Ln')::street_type, 'Quebec City', 'BC', '92254')::address_type
+  '454410146',
+  ROW(ROW(1389, 'Hillcrest Rd')::street_type, 'Quebec City', 'QC', '60466')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '747646806',
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type
+  '130494272',
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '996310569',
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type
+  '268338028',
+  ROW(ROW(9611, 'Washington Ave')::street_type, 'Calgary', 'MB', '72628')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '810675408',
-  ROW(ROW(3361, 'Cedar Ln')::street_type, 'Calgary', 'NS', '21030')::address_type
+  '538618944',
+  ROW(ROW(9048, 'Main St')::street_type, 'Quebec City', 'PE', '44456')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '932734965',
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type
+  '902288877',
+  ROW(ROW(9115, 'Hillcrest Rd')::street_type, 'Halifax', 'NB', '83984')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '227849706',
-  ROW(ROW(3615, 'Elm St')::street_type, 'Edmonton', 'NB', '48078')::address_type
+  '132794318',
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '263980558',
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type
+  '954606568',
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '797287331',
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type
+  '677483255',
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '473207864',
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type
+  '504858816',
+  ROW(ROW(4064, 'Maple Ave')::street_type, 'Calgary', 'QC', '65558')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '348910099',
-  ROW(ROW(7333, 'Maple Ave')::street_type, 'Calgary', 'SK', '92009')::address_type
+  '138655986',
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '707665652',
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type
+  '774083106',
+  ROW(ROW(9570, 'Cedar Ln')::street_type, 'Ottawa', 'NS', '39349')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '409192695',
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type
+  '818679417',
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '470416508',
-  ROW(ROW(7846, 'Sunset Blvd')::street_type, 'Ottawa', 'BC', '95665')::address_type
+  '552928401',
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '744556144',
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type
+  '993561705',
+  ROW(ROW(2669, 'Maple Ave')::street_type, 'Ottawa', 'MB', '25045')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '008476767',
-  ROW(ROW(7615, 'Oak St')::street_type, 'Vancouver', 'ON', '67546')::address_type
+  '683245390',
+  ROW(ROW(4339, 'Maple Ave')::street_type, 'Calgary', 'MB', '67854')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '150544264',
-  ROW(ROW(8222, 'Washington Ave')::street_type, 'Quebec City', 'PE', '92710')::address_type
+  '569589943',
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '185805386',
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type
+  '006081834',
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '607342241',
-  ROW(ROW(8242, 'Oak St')::street_type, 'Vancouver', 'NS', '16302')::address_type
+  '217261301',
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '970015010',
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type
+  '765581310',
+  ROW(ROW(8808, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '80614')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '373531398',
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type
+  '362768625',
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '207870652',
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type
+  '259944294',
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '531194044',
-  ROW(ROW(3696, 'Lakeview Dr')::street_type, 'Montreal', 'QC', '31664')::address_type
+  '150812853',
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '587539349',
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type
+  '014477878',
+  ROW(ROW(2662, 'Lakeview Dr')::street_type, 'Hamilton', 'QC', '25936')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '314166222',
-  ROW(ROW(2788, 'Maple Ave')::street_type, 'Toronto', 'NB', '47153')::address_type
+  '931865636',
+  ROW(ROW(2500, 'Oak St')::street_type, 'Winnipeg', 'NB', '96740')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '040898753',
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type
+  '015852819',
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '121932959',
-  ROW(ROW(1428, 'Sunset Blvd')::street_type, 'Edmonton', 'PE', '48678')::address_type
+  '324444785',
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '701866086',
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type
+  '255249963',
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '646022805',
-  ROW(ROW(7696, 'Hillcrest Rd')::street_type, 'Vancouver', 'NS', '99034')::address_type
+  '634520308',
+  ROW(ROW(643, 'Washington Ave')::street_type, 'Toronto', 'PE', '42482')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '111520408',
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type
+  '313652237',
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '474171808',
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type
+  '219425387',
+  ROW(ROW(4682, 'Cedar Ln')::street_type, 'Montreal', 'NS', '86365')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '328007152',
-  ROW(ROW(7710, 'Cedar Ln')::street_type, 'Calgary', 'ON', '37891')::address_type
+  '697863028',
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '780981539',
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type
+  '145671355',
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '544961330',
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type
+  '844019880',
+  ROW(ROW(8619, 'Elm St')::street_type, 'Hamilton', 'NS', '75101')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '484519913',
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type
+  '278392644',
+  ROW(ROW(1193, 'Oak St')::street_type, 'Ottawa', 'AB', '72437')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '926786733',
-  ROW(ROW(277, 'Cedar Ln')::street_type, 'Edmonton', 'QC', '72058')::address_type
+  '602054156',
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '864166166',
-  ROW(ROW(7181, 'Sunset Blvd')::street_type, 'Vancouver', 'NB', '10920')::address_type
+  '252275367',
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '235536321',
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type
+  '201704129',
+  ROW(ROW(762, 'Elm St')::street_type, 'Hamilton', 'NS', '61944')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '182744308',
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type
+  '881315020',
+  ROW(ROW(4049, 'Pine Rd')::street_type, 'Vancouver', 'NB', '20411')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '314725841',
-  ROW(ROW(7222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '97917')::address_type
+  '363928388',
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '604969049',
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type
+  '398497398',
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '679193032',
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type
+  '152132949',
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '683966266',
-  ROW(ROW(3818, 'Hillcrest Rd')::street_type, 'Montreal', 'ON', '22505')::address_type
+  '721101643',
+  ROW(ROW(7733, 'Washington Ave')::street_type, 'Vancouver', 'MB', '63040')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '224730780',
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type
+  '172803588',
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '340528130',
-  ROW(ROW(8000, 'Cedar Ln')::street_type, 'Ottawa', 'NB', '61544')::address_type
+  '525690198',
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '993897675',
-  ROW(ROW(604, 'Hillcrest Rd')::street_type, 'Edmonton', 'BC', '67420')::address_type
+  '394166951',
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '376362554',
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type
+  '701258881',
+  ROW(ROW(9357, 'Maple Ave')::street_type, 'Quebec City', 'PE', '43852')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '753317622',
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type
+  '920804917',
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '826025653',
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type
+  '226359631',
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '011334545',
-  ROW(ROW(114, 'Sunset Blvd')::street_type, 'Calgary', 'MB', '91164')::address_type
+  '552264869',
+  ROW(ROW(4203, 'Lakeview Dr')::street_type, 'Calgary', 'NL', '60151')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '373829322',
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type
+  '547403774',
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '417648552',
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type
+  '499725212',
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '589699846',
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type
+  '595100535',
+  ROW(ROW(1514, 'Elm St')::street_type, 'Winnipeg', 'NS', '44741')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '859376265',
-  ROW(ROW(4383, 'Sunset Blvd')::street_type, 'Halifax', 'NB', '69137')::address_type
+  '519023460',
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '275113226',
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type
+  '065346279',
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '481997172',
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type
+  '951465929',
+  ROW(ROW(2888, 'Washington Ave')::street_type, 'Montreal', 'NL', '11037')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '272435823',
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type
+  '862444404',
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '975207162',
-  ROW(ROW(3288, 'Cedar Ln')::street_type, 'Vancouver', 'NS', '10034')::address_type
+  '887498813',
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '558597981',
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type
+  '774707282',
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '972204476',
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type
+  '557897082',
+  ROW(ROW(8290, 'Sunset Blvd')::street_type, 'Montreal', 'NL', '51680')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '991666197',
-  ROW(ROW(6351, 'Main St')::street_type, 'Montreal', 'MB', '77024')::address_type
+  '889246628',
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '184026630',
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type
+  '870654669',
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '665825827',
-  ROW(ROW(7085, 'Cedar Ln')::street_type, 'Ottawa', 'ON', '95514')::address_type
+  '578218490',
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '654907861',
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type
+  '455173600',
+  ROW(ROW(2453, 'Elm St')::street_type, 'Edmonton', 'NS', '65437')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '573757961',
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type
+  '825925069',
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '082576457',
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type
+  '822771078',
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '055837844',
-  ROW(ROW(3965, 'Lakeview Dr')::street_type, 'Quebec City', 'SK', '38199')::address_type
+  '071993302',
+  ROW(ROW(3977, 'Main St')::street_type, 'Ottawa', 'BC', '84562')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '615706539',
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type
+  '677643151',
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '407052837',
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type
+  '195898133',
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '924678717',
-  ROW(ROW(6446, 'Lakeview Dr')::street_type, 'Edmonton', 'SK', '94789')::address_type
+  '990604057',
+  ROW(ROW(2222, 'Sunset Blvd')::street_type, 'Winnipeg', 'MB', '56267')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '941819173',
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type
+  '440427032',
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '869855202',
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type
+  '685485024',
+  ROW(ROW(4936, 'Washington Ave')::street_type, 'Halifax', 'AB', '92984')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '938178713',
-  ROW(ROW(7321, 'Main St')::street_type, 'Montreal', 'PE', '33746')::address_type
+  '265572783',
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '130452574',
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type
+  '524079219',
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '177504034',
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type
+  '399241516',
+  ROW(ROW(1763, 'Hillcrest Rd')::street_type, 'Winnipeg', 'ON', '20665')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '686761851',
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type
+  '257622425',
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type
 );
 
 INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '260566806',
-  ROW(ROW(2927, 'Lakeview Dr')::street_type, 'Montreal', 'NL', '66377')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '464783976',
-  ROW(ROW(5087, 'Main St')::street_type, 'Ottawa', 'AB', '89075')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '159586496',
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '007632589',
-  ROW(ROW(1572, 'Elm St')::street_type, 'Montreal', 'NL', '90145')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '836631192',
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '325428893',
-  ROW(ROW(2383, 'Washington Ave')::street_type, 'Toronto', 'NB', '53297')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '445137082',
-  ROW(ROW(2661, 'Lakeview Dr')::street_type, 'Halifax', 'BC', '15873')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '078036064',
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '683495883',
-  ROW(ROW(3810, 'Elm St')::street_type, 'Ottawa', 'NB', '24136')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '919194280',
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '028216063',
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '837371040',
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '709769729',
-  ROW(ROW(6810, 'Washington Ave')::street_type, 'Hamilton', 'BC', '95076')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '520104353',
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '072604297',
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '622427199',
-  ROW(ROW(504, 'Hillcrest Rd')::street_type, 'Quebec City', 'PE', '51964')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '735072856',
-  ROW(ROW(4735, 'Washington Ave')::street_type, 'Montreal', 'SK', '58142')::address_type
-);
-
-INSERT INTO WorksAt (e_SSN, h_address) VALUES (
-  '817926845',
-  ROW(ROW(3830, 'Oak St')::street_type, 'Winnipeg', 'BC', '91095')::address_type
+  '119301799',
+  ROW(ROW(3064, 'Cedar Ln')::street_type, 'Halifax', 'AB', '40675')::address_type
 );
