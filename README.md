@@ -11,6 +11,7 @@ A full-stack hotel booking system with customer and employee functionalities, bu
 - [Git](https://git-scm.com/)
 
 ## Setup Instructions
+When following these instructions on windows, preferrably use the Command Prompt terminal rather than the Powershell terminal. 
 
 ### 1. Clone Repository
 ```bash
