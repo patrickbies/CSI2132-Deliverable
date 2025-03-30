@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CustomerType } from '../../../types/customer'
+import { CustomerType } from '../../../../types/customer'
 import Login from './Login';
 import CustomerHome from './CustomerHome';
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CustomerType } from "../../types/customer";
+import { CustomerType } from "../../../types/customer";
 
 const CustomerInfoForm = ({sendCustomerInfo} : {sendCustomerInfo : (e : CustomerType) => void}) => {
   const [idtype, setIdtype] = useState<string>("");
@@ -121,9 +121,10 @@ const CustomerInfoForm = ({sendCustomerInfo} : {sendCustomerInfo : (e : Customer
         className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm outline-none transition-all"
       />
 
-      <input type="submit" className="my-5 py-5 bg-white/80 hover:bg-white transition-all text-black flex rounded-xl justify-center font-semibold" />
+      <input type="submit" className="my-5 py-5 bg-white/80 hover:bg-white transition-all cursor-pointer text-black flex rounded-xl justify-center font-semibold" />
     </form>
   );
 };
 
 export default CustomerInfoForm;
+

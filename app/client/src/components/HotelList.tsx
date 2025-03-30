@@ -1,7 +1,7 @@
 // client/src/components/HotelList.tsx
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { HotelType } from '../../types/hotel';
+import { HotelType } from '../../../types/hotel';
 
 const HotelList = () => {
   const [hotels, setHotels] = useState<HotelType[]>([]);

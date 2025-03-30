@@ -1,18 +1,35 @@
 import { useState } from "react";
-import { CustomerType } from "../../../types/customer";
+import { CustomerType } from "../../../../types/customer";
 import CustomerInfoForm from "../../components/CustomerInfoForm";
+import axios from "axios";
 
-const Login = ({ setUser }: { setUser: any }) => {
+const Login = ({ setUser }: { setUser: (e: CustomerType | null) => void }) => {
   const [idtype, setIdtype] = useState<string>("");
   const [uid, setUID] = useState<string>("");
+  const [error, setError] = useState<string>("");
 
   const handleCreate = (e: CustomerType) => {
+    const postCustomer = async () => {
+      try {
+        const response = await axios.post("/api/customers", e);
+        if (response.status === 201) {
+          alert("Customer created successfully!");
+
+          setUser(e);
+        }
+      } catch (err) {
+        if (axios.isAxiosError(err)) {
+          setError(err.response?.data.error || "Failed to create customer");
+        } else {
+          setError("An unexpected error occurred");
+        }
+      }
+    };
     
+    postCustomer();
   };
 
-  const handleLogin = () => {
-
-  };
+  const handleLogin = () => {};
 
   return (
     <div className="h-[80vh] mt-[8vh] bg-[#111] w-[80vw] rounded-xl flex overflow-hidden">
@@ -50,7 +67,7 @@ const Login = ({ setUser }: { setUser: any }) => {
           />
           <input
             type="submit"
-            className="my-5 py-5 bg-white/80 hover:bg-white transition-all text-black flex rounded-xl justify-center font-semibold"
+            className="my-5 py-5 bg-white/80 hover:bg-white transition-all cursor-pointer text-black flex rounded-xl justify-center font-semibold"
           />
         </form>
       </div>

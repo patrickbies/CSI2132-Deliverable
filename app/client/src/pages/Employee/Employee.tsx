@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {EmployeeType} from '../../../types/employee'
+import {EmployeeType} from '../../../../types/employee'
 import Login from './Login';
 import EmployeeHome from './EmployeeHome';
 
