@@ -5,7 +5,7 @@ A full-stack hotel booking system with customer and employee functionalities, bu
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (v20)
-- [npm](https://www.npmjs.com/) (v11)
+- [npm](https://www.npmjs.com/) (v11) (should be included in node, run `npm install -g npm` after installing node)
 - [pgAdmin 4](https://www.pgadmin.org/) (optional, to setup PostgreSQL database)
 - [PostgreSQL](https://www.postgresql.org/) (v17)
 - [Git](https://git-scm.com/)
