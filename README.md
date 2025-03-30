@@ -80,3 +80,4 @@ This will run,
 * Frontend - http://localhost:5173
 * Backend - http://localhost:5000
 
+If Frontend is not running on 5173, (vite will tell you when running npm run dev command), you must change `http://localhost:5173` to `http://localhost:PORT` (where PORT is the alternate port given by vite) in `app\server\index.js`

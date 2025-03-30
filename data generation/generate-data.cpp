@@ -197,7 +197,7 @@ vector<string> generateRoles(mt19937& rng) {
 }
 
 vector<string> generateAmmenities(mt19937& rng) {
-    vector<string> possibleAmmenities = { "On Suite", "Kitchen", "Pool", "Hot Tub", "Personal Chef", "Working Fridge"};
+    vector<string> possibleAmmenities = { "On Suite", "Kitchen", "Pool", "Hot Tub", "Personal Chef", "Working Fridge" };
     return genStringList(rng, possibleAmmenities, 1, 3);
 }
 

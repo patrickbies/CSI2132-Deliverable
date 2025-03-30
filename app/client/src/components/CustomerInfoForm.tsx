@@ -24,14 +24,13 @@ const CustomerInfoForm = ({sendCustomerInfo} : {sendCustomerInfo : (e : Customer
         middle_name: middleName,
         last_name: lastName
       },
-      address: {
+      address: (!city || !state || !streetNum || !streetName || !zip) ? null : {
         city: city,
         state: state,
         street_name: streetName,
         street_num: streetNum,
         zip: zip,
       },
-      created_at: Date.now(),
     })
   }
 

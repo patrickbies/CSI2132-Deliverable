@@ -12,7 +12,7 @@ const Customer = () => {
         !user ?
         <Login setUser={setUser} />
         :
-        <CustomerHome />
+        <CustomerHome user={user} />
       }
     </section>
   )

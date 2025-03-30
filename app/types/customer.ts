@@ -8,12 +8,11 @@ export interface CustomerType {
     middle_name?: string,
     last_name: string
   },
-  address?: {
+  address: null | {
     street_num?: number;
     street_name?: string;
     city?: string;
     state?: string;
     zip?: string;
   },
-  created_at: number
 };

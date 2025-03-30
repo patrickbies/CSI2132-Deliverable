@@ -2,34 +2,47 @@ import { useState } from "react";
 import { CustomerType } from "../../../../types/customer";
 import CustomerInfoForm from "../../components/CustomerInfoForm";
 import axios from "axios";
+import { useLoading } from "../../components/loadingctx";
 
 const Login = ({ setUser }: { setUser: (e: CustomerType | null) => void }) => {
+  const { setLoading } = useLoading();
+
   const [idtype, setIdtype] = useState<string>("");
   const [uid, setUID] = useState<string>("");
-  const [error, setError] = useState<string>("");
 
   const handleCreate = (e: CustomerType) => {
     const postCustomer = async () => {
       try {
-        const response = await axios.post("/api/customers", e);
+        const response = await axios.post("/api/postcustomer", e);
         if (response.status === 201) {
-          alert("Customer created successfully!");
-
           setUser(e);
         }
       } catch (err) {
-        if (axios.isAxiosError(err)) {
-          setError(err.response?.data.error || "Failed to create customer");
-        } else {
-          setError("An unexpected error occurred");
-        }
+        alert(err);
+      } finally {
+        setLoading(false);
       }
     };
-    
+
+    setLoading(true);
     postCustomer();
   };
 
-  const handleLogin = () => {};
+  const handleLogin = () => {
+    const getCustomer = async () => {
+      try {
+        const response = await axios.get(`/api/getcustomer/${idtype}/${uid}`);
+        setUser(response.data);
+      } catch (err) {
+        alert(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    setLoading(true);
+    getCustomer();
+  };
 
   return (
     <div className="h-[80vh] mt-[8vh] bg-[#111] w-[80vw] rounded-xl flex overflow-hidden">
