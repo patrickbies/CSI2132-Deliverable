@@ -1,7 +1,19 @@
+import { useState } from 'react';
+import {EmployeeType} from '../../../types/employee'
+import Login from './Login';
+import EmployeeHome from './EmployeeHome';
+
 const Employee = () => {
+  const [user, setUser] = useState<EmployeeType | null>(null);
+
   return (
     <section className="w-full text-white h-screen justify-center items-center flex">
-      <h1 className="text-3xl font-semibold">e-Hotels CSI2132</h1>
+      {
+        !user ?
+        <Login setUser={setUser} />
+        :
+        <EmployeeHome />
+      }
     </section>
   )
 }
