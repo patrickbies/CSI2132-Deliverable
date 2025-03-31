@@ -3,12 +3,33 @@ import { CustomerType } from "../../../../types/customer";
 import SearchFilters from "./SearchFilters";
 import RoomCard from "./RoomCard";
 import { RoomType } from "../../../../types/room";
+import axios from "axios";
 
 const CustomerHome = ({ user }: { user: CustomerType }) => {
   const [selectedRoom, setSelectedRoom] = useState<RoomType | null>(null);
 
+  const searchRooms = async (e: {
+    startDate: Date;
+    endDate: Date;
+    capacity: number;
+    filters: {
+      stars: number[];
+      location: string;
+      amenities: string[];
+      sort: string;
+    };
+  }) => {
+    try {
+      console.log(e);
+      const response = await axios.post("/api/searchrooms", e);
+      console.log(response);
+    } catch (error) {
+      alert(error);
+    }
+  };
+
   // Mock data - replace with API calls
-  const rooms : RoomType[] = [
+  const rooms: RoomType[] = [
     {
       extendable: false,
       mountain_view: true,
@@ -19,17 +40,17 @@ const CustomerHome = ({ user }: { user: CustomerType }) => {
       amenities: ["TV", "AC", "WiFi"],
       damages: [],
       hotel: {
-        manager_ssn: '123',
+        manager_ssn: "123",
         num_rooms: 20,
-        email: 'chain@gmail.com',
+        email: "chain@gmail.com",
         chain_id: "Luxury Resort",
         num_stars: 5,
-        address: { 
+        address: {
           city: "Miami",
           state: "On",
           street_name: "beast",
           street_num: 10,
-          zip: '100s10'
+          zip: "100s10",
         },
       },
     },
@@ -44,11 +65,11 @@ const CustomerHome = ({ user }: { user: CustomerType }) => {
         Find Your Perfect Hotel Room
       </h1>
 
-      <SearchFilters />
+      <SearchFilters sendFilters={searchRooms} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6">
         {rooms.map((room) => (
-          <RoomCard  setSelectedRoom={setSelectedRoom} room={room}/>
+          <RoomCard setSelectedRoom={setSelectedRoom} room={room} />
         ))}
       </div>
     </div>

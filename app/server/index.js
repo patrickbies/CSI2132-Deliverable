@@ -13,6 +13,8 @@ app.use('/api', customerRouter);
 const hotelRouter = require("./routes/hotels.routes");
 app.use('/api', hotelRouter);
 
+const roomRouter = require("./routes/room.routes");
+app.use('/api', roomRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

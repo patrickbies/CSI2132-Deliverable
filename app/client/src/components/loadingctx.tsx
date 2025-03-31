@@ -1,4 +1,3 @@
-// LoadingContext.tsx
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 interface LoadingContextProps {
@@ -33,7 +32,7 @@ export const LoadingProvider: React.FC<LoadingProviderProps> = ({ children }) =>
 
 const LoadingOverlay: React.FC = () => (
   <div className='fixed inset-0 flex justify-center items-center z-[999] bg-[rgba(0,0,0,0.5)]'>
-    <div className="spinner">
+    <div>
       Loading...
     </div>
   </div>

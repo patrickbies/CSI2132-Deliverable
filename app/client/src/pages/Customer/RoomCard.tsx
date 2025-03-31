@@ -24,16 +24,16 @@ const RoomCard = ({ room, setSelectedRoom }: { room: RoomType, setSelectedRoom: 
         </div>
 
         <div className="space-y-2 mb-4">
-          <div className="flex items-center justify-between">
-            <span className="text-gray-700">View:</span>
+          <div className="flex items-center justify-between text-gray-700">
+            <span>View:</span>
             <span className="font-medium">
               {room.sea_view ? "Sea" : ""}{" "}
               {room.mountain_view ? "Mountain" : ""}{" "}
               {!room.sea_view && !room.mountain_view && "Normal"}
             </span>
           </div>
-          <div className="flex items-center justify-between">
-            <span className="text-gray-700">Capacity:</span>
+          <div className="flex items-center justify-between text-gray-700">
+            <span>Capacity:</span>
             <span className="font-medium">{room.capacity} people</span>
           </div>
           <div className="flex items-center justify-between">
