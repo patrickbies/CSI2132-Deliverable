@@ -34,7 +34,7 @@ const CustomerHome = ({ user }: { user: CustomerType }) => {
 
   const bookRoom = async (e: RoomType) => {
     try {
-      if (!ed || !sd) alert('must set start and end date');
+      if (!ed || !sd) return alert('must set start and end date');
       const booking = {
         start_at: sd,
         end_at: ed,
@@ -42,6 +42,8 @@ const CustomerHome = ({ user }: { user: CustomerType }) => {
         room_num: e.roomNum,
         hotel_address: e.hotel.address,
       }
+
+      console.log(booking);
 
       const response = await axios.post("/api/bookroom", booking);
       alert("Booking Successful!");

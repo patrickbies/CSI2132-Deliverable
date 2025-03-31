@@ -50,7 +50,7 @@ router.post('/postcustomer', async (req, res) => {
     }
 
     const result = await pool.query(query, params);
-    res.status(201).json(result.rows[0]);
+    res.status(201).json(parseRecord(result.rows[0]));
   } catch (error) {
     if (error.code === '23505') {
       res.status(409).json({ error: 'Customer ID already exists' });

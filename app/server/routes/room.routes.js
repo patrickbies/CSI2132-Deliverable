@@ -95,7 +95,7 @@ router.post("/searchrooms", async (req, res) => {
         num_stars: e.num_stars,
         num_rooms: e.num_rooms,
       },
-      roomNum: e.roomNum,
+      roomNum: e.room_num,
       price: e.price,
       capacity: e.capacity,
       sea_view: e.sea_view,

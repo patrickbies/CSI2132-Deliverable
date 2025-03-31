@@ -16,6 +16,9 @@ app.use('/api', hotelRouter);
 const roomRouter = require("./routes/room.routes");
 app.use('/api', roomRouter);
 
+const bookingRouter = require("./routes/booking.routes");
+app.use('/api', bookingRouter);
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

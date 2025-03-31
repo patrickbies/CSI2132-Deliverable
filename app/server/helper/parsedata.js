@@ -22,6 +22,10 @@ const fieldSchemas = {
     { name: 'first_name', type: 'string' },
     { name: 'middle_name', type: 'string', optional: true },
     { name: 'last_name', type: 'string' }
+  ],
+  identification: [
+    { name: 'id_type', type: 'string' },
+    { name: 'uid', type: 'string' }
   ]
 };
 

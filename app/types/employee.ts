@@ -5,7 +5,7 @@ export interface EmployeeType {
     middle_name?: string,
     last_name: string
   },
-  address?: {
+  address: null | {
     street_num?: number;
     street_name?: string;
     city?: string;
