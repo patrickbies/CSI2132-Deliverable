@@ -1,6 +1,6 @@
 import { RoomType } from "../../../../types/room";
 
-const RoomCard = ({ room, setSelectedRoom }: { room: RoomType, setSelectedRoom: (e: RoomType | null) => void }) => {
+const RoomCard = ({ room, bookRoom }: { room: RoomType, bookRoom: (e: RoomType) => void }) => {
   return (
     <div
       key={
@@ -54,7 +54,7 @@ const RoomCard = ({ room, setSelectedRoom }: { room: RoomType, setSelectedRoom: 
         </div>
 
         <button
-          onClick={() => setSelectedRoom(room)}
+          onClick={() => bookRoom(room)}
           className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
         >
           Book Now

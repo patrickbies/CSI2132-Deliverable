@@ -6,7 +6,9 @@ import { RoomType } from "../../../../types/room";
 import axios from "axios";
 
 const CustomerHome = ({ user }: { user: CustomerType }) => {
-  const [selectedRoom, setSelectedRoom] = useState<RoomType | null>(null);
+  const [rooms, setRooms] = useState<RoomType[]>([]);
+  const [sd, setSd] = useState<Date>();
+  const [ed, setEd] = useState<Date>();
 
   const searchRooms = async (e: {
     startDate: Date;
@@ -19,42 +21,35 @@ const CustomerHome = ({ user }: { user: CustomerType }) => {
       sort: string;
     };
   }) => {
+    setSd(e.startDate);
+    setEd(e.endDate);
+
     try {
-      console.log(e);
       const response = await axios.post("/api/searchrooms", e);
-      console.log(response);
+      setRooms(response.data);
     } catch (error) {
       alert(error);
     }
   };
 
-  // Mock data - replace with API calls
-  const rooms: RoomType[] = [
-    {
-      extendable: false,
-      mountain_view: true,
-      roomNum: 10,
-      sea_view: true,
-      price: 199,
-      capacity: 2,
-      amenities: ["TV", "AC", "WiFi"],
-      damages: [],
-      hotel: {
-        manager_ssn: "123",
-        num_rooms: 20,
-        email: "chain@gmail.com",
-        chain_id: "Luxury Resort",
-        num_stars: 5,
-        address: {
-          city: "Miami",
-          state: "On",
-          street_name: "beast",
-          street_num: 10,
-          zip: "100s10",
-        },
-      },
-    },
-  ];
+  const bookRoom = async (e: RoomType) => {
+    try {
+      if (!ed || !sd) alert('must set start and end date');
+      const booking = {
+        start_at: sd,
+        end_at: ed,
+        c_identification: user.identification,
+        room_num: e.roomNum,
+        hotel_address: e.hotel.address,
+      }
+
+      const response = await axios.post("/api/bookroom", booking);
+      alert("Booking Successful!");
+      console.log(response);
+    } catch (err) {
+      alert(err);
+    }
+  }
 
   return (
     <div className="inset-0 absolute p-8 mx-auto bg-black w-full mt-[8vh] flex flex-col items-center overflow-y-scroll">
@@ -69,7 +64,7 @@ const CustomerHome = ({ user }: { user: CustomerType }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6">
         {rooms.map((room) => (
-          <RoomCard setSelectedRoom={setSelectedRoom} room={room} />
+          <RoomCard bookRoom={bookRoom} room={room} />
         ))}
       </div>
     </div>

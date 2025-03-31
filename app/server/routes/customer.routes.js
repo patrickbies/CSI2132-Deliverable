@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const pool = require("../db");
+const parseRecord = require("../helper/parsedata");
 
 router.post('/postcustomer', async (req, res) => {
   const { identification, full_name, address } = req.body;
@@ -65,19 +66,7 @@ router.get('/getcustomer/:id_type/:uid', async (req, res) => {
 
   try {
     const result = await pool.query(
-      `SELECT 
-        (identification).id_type,
-        (identification).uid,
-        (full_name).first_name,
-        (full_name).middle_name,
-        (full_name).last_name,
-        (address).street_num,
-        (address).street_name,
-        (address).city,
-        (address).state,
-        (address).zip,
-        created_at
-      FROM Customer
+      `SELECT * FROM Customer
       WHERE identification = ROW($1, $2)::identification_type`,
       [id_type, uid]
     );
@@ -86,25 +75,7 @@ router.get('/getcustomer/:id_type/:uid', async (req, res) => {
       return res.status(404).json({ error: 'Customer not found' });
     }
 
-    const customer = {
-      identification: {
-        id_type: result.rows[0].id_type,
-        uid: result.rows[0].uid
-      },
-      full_name: {
-        first_name: result.rows[0].first_name,
-        middle_name: result.rows[0].middle_name,
-        last_name: result.rows[0].last_name
-      },
-      address: result.rows[0].street_num ? {
-        street_num: result.rows[0].street_num,
-        street_name: result.rows[0].street_name,
-        city: result.rows[0].city,
-        state: result.rows[0].state,
-        zip: result.rows[0].zip
-      } : null,
-      created_at: result.rows[0].created_at
-    };
+    const customer = parseRecord(result.rows[0]);
 
     res.json(customer);
   } catch (error) {
