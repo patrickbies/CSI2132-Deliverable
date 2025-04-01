@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { EmployeeType } from "../../../types/employee";
 
-const EmployeeInfoForm = ({sendCustomerInfo} : {sendCustomerInfo : (e : EmployeeType) => void}) => {
+const EmployeeInfoForm = ({sendEmployeeInfo} : {sendEmployeeInfo : (e : EmployeeType) => void}) => {
   const [ssn, setSSN] = useState<string>("");
   const [firstName, setFirstName] = useState<string>("");
   const [middleName, setMiddleName] = useState<string | undefined>("");
@@ -12,8 +12,8 @@ const EmployeeInfoForm = ({sendCustomerInfo} : {sendCustomerInfo : (e : Employee
   const [state, setState] = useState<string | undefined>("");
   const [zip, setZip] = useState<string | undefined>("");
 
-  const createCustomer = () => {
-    sendCustomerInfo({
+  const createEmployee = () => {
+    sendEmployeeInfo({
       SSN: ssn,
       full_name: {
         first_name: firstName,
@@ -34,7 +34,7 @@ const EmployeeInfoForm = ({sendCustomerInfo} : {sendCustomerInfo : (e : Employee
   return (
     <form onSubmit={e => {
       e.preventDefault()
-      createCustomer()
+      createEmployee()
     }} className="w-full min-h-full text-white px-10 gap-2 flex flex-col">
       <h1 className="font-semibold py-3">Identification:</h1>
       <input

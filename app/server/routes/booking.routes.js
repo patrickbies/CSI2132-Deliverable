@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const pool = require("../db");
+const parseRecord = require("../helper/parsedata")
 
 router.post("/bookroom", async (req, res) => {
   const {
@@ -48,8 +49,26 @@ router.post("/bookroom", async (req, res) => {
     res.status(201).json(result.rows[0]);
 
   } catch (err) {
-    console.log(err)
     res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/getbooking/:id_type/:uid', async (req, res) => {
+  const { id_type, uid } = req.params;
+
+  try {
+    const result = await pool.query(
+      `SELECT * FROM Booking
+      WHERE c_identification = ROW($1, $2)::identification_type`,
+      [id_type, uid]
+    );
+
+    const bookings = result.rows.map(row => parseRecord(row));
+
+    res.json(bookings);
+  } catch (error) {
+    console.error('Database error:', error);
+    res.status(500).json({ error: 'Failed to retrieve bookings' });
   }
 });
 

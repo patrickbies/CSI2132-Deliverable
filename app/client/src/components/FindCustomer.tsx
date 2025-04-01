@@ -1,21 +1,25 @@
 import { useState } from "react";
+import { CustomerType } from "../../../types/customer";
+import CustomerInfoForm from "./CustomerInfoForm";
 import axios from "axios";
-import { useLoading } from "../../components/loadingctx";
-import { EmployeeType } from "../../../../types/employee";
-import EmployeeInfoForm from "../../components/EmployeeInfoForm";
+import { useLoading } from "./loadingctx";
 
-const Login = ({ setUser }: { setUser: (e: EmployeeType | null) => void }) => {
+const FindCustomer = ({
+  setCustomer,
+}: {
+  setCustomer: (e: CustomerType) => void;
+}) => {
   const { setLoading } = useLoading();
 
-  const [ssn, setSSN] = useState<string>("");
+  const [uid, setUID] = useState<string>();
+  const [idtype, setIdtype] = useState<string>();
 
-  const handleCreate = (e: EmployeeType) => {
+  const createCustomer = (e: CustomerType) => {
     const postCustomer = async () => {
       try {
-        const response = await axios.post("/api/postemployee", e);
+        const response = await axios.post("/api/postcustomer", e);
         if (response.status === 201) {
-          setLoading(false);
-          setUser(e);
+          setCustomer(e);
         }
       } catch (err) {
         alert(err);
@@ -31,8 +35,8 @@ const Login = ({ setUser }: { setUser: (e: EmployeeType | null) => void }) => {
   const handleLogin = () => {
     const getCustomer = async () => {
       try {
-        const response = await axios.get(`/api/getemployee/${ssn}`);
-        setUser(response.data);
+        const response = await axios.get(`/api/getcustomer/${idtype}/${uid}`);
+        setCustomer(response.data);
       } catch (err) {
         alert(err);
       } finally {
@@ -47,8 +51,10 @@ const Login = ({ setUser }: { setUser: (e: EmployeeType | null) => void }) => {
   return (
     <div className="h-[80vh] mt-[8vh] bg-[#111] w-[80vw] rounded-xl flex overflow-hidden">
       <div className="w-[40vw] justify-items-center py-10 h-full overflow-y-scroll">
-        <h1 className="text-white text-2xl font-semibold">Create New Employee</h1>
-        <EmployeeInfoForm sendEmployeeInfo={handleCreate} />
+        <h1 className="text-white text-2xl font-semibold">
+          Create New Customer
+        </h1>
+        <CustomerInfoForm sendCustomerInfo={createCustomer} />
       </div>
       <div
         onSubmit={(e) => {
@@ -58,15 +64,23 @@ const Login = ({ setUser }: { setUser: (e: EmployeeType | null) => void }) => {
         className="bg-[#1a1a1a] w-[40vw] h-full flex flex-col items-center py-10"
       >
         <h1 className="text-white text-2xl font-semibold">
-          Existing User Login
+          Find Existing Customer
         </h1>
         <form className="w-full min-h-full text-white px-10 gap-2 flex flex-col">
           <h1 className="font-semibold py-3">Identification:</h1>
           <input
-            value={ssn}
-            onChange={(e) => setSSN(e.target.value)}
-            placeholder="SSN"
+            value={idtype}
+            onChange={(e) => setIdtype(e.target.value)}
+            placeholder="ID Type"
             maxLength={50}
+            required
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm outline-none transition-all"
+          />
+          <input
+            value={uid}
+            onChange={(e) => setUID(e.target.value)}
+            placeholder="Unique Identification"
+            maxLength={255}
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm outline-none transition-all"
           />
@@ -80,4 +94,4 @@ const Login = ({ setUser }: { setUser: (e: EmployeeType | null) => void }) => {
   );
 };
 
-export default Login;
+export default FindCustomer;

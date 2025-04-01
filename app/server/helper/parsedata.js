@@ -26,7 +26,14 @@ const fieldSchemas = {
   identification: [
     { name: 'id_type', type: 'string' },
     { name: 'uid', type: 'string' }
-  ]
+  ],
+  c_identification: [
+    { name: 'id_type', type: 'string' },
+    { name: 'uid', type: 'string' }
+  ],
+  start_at : 'date',
+  end_at : 'date',
+  checkedin_at : 'date',
 };
 
 function parseTupleString(str, schema) {
@@ -54,21 +61,26 @@ function parseTupleString(str, schema) {
 function parseRecord(record) {
   const parsed = {};
 
-  Object.keys(fieldSchemas).forEach((key) => {
-    if (record.hasOwnProperty(key)) {
-      parsed[key] = parseTupleString(record[key], fieldSchemas[key]);
+  Object.keys(record).forEach((key) => {
+    const schema = fieldSchemas[key];
+    const value = record[key];
+
+    if (!schema) {
+      parsed[key] = value;
+      return;
+    }
+
+    if (schema.type === 'date') {
+      parsed[key] = value ? new Date(value) : null;
+    } else if (Array.isArray(schema)) {
+      parsed[key] = parseTupleString(value, schema);
     } else {
-      parsed[key] = null; 
+      parsed[key] = value;
     }
   });
 
-  for (const key in record) {
-    if (!fieldSchemas.hasOwnProperty(key)) {
-      parsed[key] = record[key];
-    }
-  }
-
   return parsed;
 }
+
 
 module.exports = parseRecord;
