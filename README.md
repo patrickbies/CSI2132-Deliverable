@@ -13,7 +13,7 @@ A full-stack hotel booking system with customer and employee functionalities, bu
 ## Setup Instructions
 When following these instructions on windows, preferrably use the Command Prompt terminal rather than the Powershell terminal. 
 
-### 1. Clone Repository
+### 1. Clone Repository - only if necessary (I provided the codebase within the project .zip)
 ```bash
 git clone https://github.com/patrickbies/CSI2132-Deliverable.git
 cd CSI2132-Deliverable
