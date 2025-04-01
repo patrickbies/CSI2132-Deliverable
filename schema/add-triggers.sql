@@ -100,3 +100,8 @@ JOIN
 GROUP BY 
     h.address;
 
+CREATE INDEX idx_room_capacity ON Room(capacity);
+CREATE INDEX idx_room_price ON Room(price);
+CREATE INDEX idx_room_amenities ON Room USING GIN (amenities);
+CREATE INDEX idx_hotel_city_lower ON Hotel (LOWER((address).city));
+CREATE INDEX idx_hotel_num_stars ON Hotel(num_stars);
