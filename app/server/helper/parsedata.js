@@ -31,9 +31,6 @@ const fieldSchemas = {
     { name: 'id_type', type: 'string' },
     { name: 'uid', type: 'string' }
   ],
-  start_at : 'date',
-  end_at : 'date',
-  checkedin_at : 'date',
 };
 
 function parseTupleString(str, schema) {
@@ -70,9 +67,7 @@ function parseRecord(record) {
       return;
     }
 
-    if (schema.type === 'date') {
-      parsed[key] = value ? new Date(value) : null;
-    } else if (Array.isArray(schema)) {
+    if (Array.isArray(schema)) {
       parsed[key] = parseTupleString(value, schema);
     } else {
       parsed[key] = value;

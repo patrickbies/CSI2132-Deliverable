@@ -49,9 +49,10 @@ const CustomerHelp = ({
     fetchData();
   }, []);
 
-  const checkin = (booking: BookingType) => {
+  const checkin = async (booking: BookingType) =>  {
     try {
-      axios.post("/api/rentroom", { booking: booking, e_SSN: user.SSN });
+      console.log(user)
+      await axios.post("/api/rentroom", { booking: booking, e_SSN: user.SSN == null ?  user.ssn : user.SSN });
 
       fetchData();
     } catch (err) {
@@ -61,7 +62,13 @@ const CustomerHelp = ({
 
   const checkout = (renting: RentingType) => {
     try {
-      axios.post("/api/checkout", renting);
+      const data = {
+        ...renting,
+        checkedin_at: renting.checkedin_at.toISOString(),
+      };
+
+      console.log(data)
+      axios.post("/api/checkout", data);
 
       fetchData();
     } catch (err) {
@@ -85,7 +92,7 @@ const CustomerHelp = ({
         </span>
       </h1>
       <div className="flex bg-white/10 mt-10 rounded-xl w-[90vw] h-[60vh] justify-between">
-        <div className="overflow-y-scroll px-10 w-[30%]">
+        <div className="overflow-y-scroll px-10 w-[40%]">
           <h1 className="text-xl font-semibold text-white/95 mt-8 mb-3">
             Convert booking to renting:
           </h1>
@@ -106,12 +113,7 @@ const CustomerHelp = ({
             </div>
           ))}
         </div>
-        <div>
-          <h1 className="text-xl font-semibold text-white/95 my-8">
-            Create renting:
-          </h1>
-        </div>
-        <div className="overflow-y-scroll w-[30%]"> 
+        <div className="overflow-y-scroll w-[40%]"> 
           <h1 className="text-xl font-semibold text-white/95 mt-8 mb-3">
             Check out customer:
           </h1>

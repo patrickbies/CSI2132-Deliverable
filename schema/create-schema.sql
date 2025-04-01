@@ -1,11 +1,11 @@
 -- cleanup
 DROP TABLE IF EXISTS 
     BookingArchive, RentingArchive, WorksAt, Booking, Renting, 
-    Customer, Room, Hotel, Employee, HotelChain;
+    Customer, Room, Hotel, Employee, HotelChain CASCADE;
 
 DROP TYPE IF EXISTS 
     identification_type, full_name_type, phone_number_type, 
-    address_type, street_type;
+    address_type CASCADE;
 
 -- helper types
 CREATE TYPE address_type AS (

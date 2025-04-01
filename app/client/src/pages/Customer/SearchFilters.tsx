@@ -84,6 +84,7 @@ const SearchFilters = ({
           <DatePicker
             selected={startDate}
             onChange={setStartDate}
+            minDate={new Date(Date.now())}
             className="w-full rounded-md ring-1 px-2 py-1 border-gray-500"
             placeholderText="Select start date"
           />

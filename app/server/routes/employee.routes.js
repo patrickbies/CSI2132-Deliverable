@@ -48,6 +48,7 @@ router.post('/postemployee', async (req, res) => {
     }
 
     const result = await pool.query(query, params);
+    result.rows[0].SSN = result.rows[0].ssn;
     res.status(201).json(result.rows[0]);
   } catch (err) {
     console.log(err)
@@ -70,7 +71,7 @@ router.get('/getemployee/:ssn', async (req, res) => {
     }
 
     const customer = parseRecord(result.rows[0]);
-
+    result.rows[0].SSN = result.rows[0].ssn;
     res.json(customer);
   } catch (error) {
     console.error('Database error:', error);

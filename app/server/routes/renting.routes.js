@@ -30,8 +30,8 @@ router.post("/rentroom", async (req, res) => {
 
     await pool.query(delq, delp);
 
-    const identificationValue = `($${3}::varchar, $${4}::varchar)`;
-    addressValue = `($${6}::integer, $${7}::varchar, $${8}::varchar, $${9}::varchar, $${10}::varchar)`;
+    const identificationValue = `($${4}::varchar, $${5}::varchar)`;
+    addressValue = `($${7}::integer, $${8}::varchar, $${9}::varchar, $${10}::varchar, $${11}::varchar)`;
 
     const query = `
       INSERT INTO Renting (
@@ -43,17 +43,18 @@ router.post("/rentroom", async (req, res) => {
         room_num,
         hotel_address
       ) VALUES (
-        NOW(),
         $1,
-        FALSE,
         $2,
+        FALSE,
+        $3,
         ${identificationValue}::identification_type,
-        $5,
+        $6,
         ${addressValue}::address_type
       ) RETURNING *
     `;
 
     const params = [
+      new Date(Date.now()),
       booking.end_at,
       e_SSN,
       booking.c_identification.id_type,
@@ -67,8 +68,9 @@ router.post("/rentroom", async (req, res) => {
     ];
 
     const result = await pool.query(query, params);
-    res.status(201).json(result.rows[0]);
+    res.status(201).json(parseRecord(result.rows[0]));
   } catch (err) {
+    console.log(err);
     res.status(500).json({ error: err.message });
   }
 });
@@ -82,9 +84,9 @@ router.post("/checkout", async (req, res) => {
     const query = `
       DELETE FROM Renting 
       WHERE (
-        checkedin_at = $1 AND
+        checkedin_at = $1::TIMESTAMPTZ AND
         room_num = $2 AND
-        hotel_address = ${addressValue}::address_type 
+        hotel_address = ROW${addressValue}::address_type 
       )
     `;
 
@@ -99,9 +101,8 @@ router.post("/checkout", async (req, res) => {
     ]
 
     await pool.query(query, params);
-    res.status(201);
+    res.status(200).json({ success: true }); 
   } catch (err) {
-    console.log(err)
     res.status(500).json({ error: err.message });
   }
 });
